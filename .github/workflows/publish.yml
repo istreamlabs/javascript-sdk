@@ -1,0 +1,21 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: Publish SDK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Generate JS SDK with the OpenAPITools Generator
+        uses: openapi-generators/openapitools-generator-action@v1.3.0
+        with:
+          generator: javascript
+          openapi-url: https://api.istreamplanet.com/openapi.json
+      - name: print-diff
+        shell: bash
+        run: |
+          git diff origin master
