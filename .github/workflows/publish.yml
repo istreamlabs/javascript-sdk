@@ -19,4 +19,4 @@ jobs:
       - name: print-diff
         shell: bash
         run: |
-          git diff origin master
+          git diff origin/master
