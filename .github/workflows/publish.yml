@@ -15,8 +15,9 @@ jobs:
         with:
           generator: javascript
           openapi-url: https://api.istreamplanet.com/openapi.json
-          command-args: --skip-validate-spec
+          command-args: --skip-validate-spec --package-name javascript-sdk -o /home/runner/work/javascript-sdk/javascript-sdk
       - name: print-diff
         shell: bash
         run: |
+          cd /home/runner/work/javascript-sdk/javascript-sdk
           git diff origin/master
