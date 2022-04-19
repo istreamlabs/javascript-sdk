@@ -15,6 +15,7 @@ jobs:
         with:
           generator: javascript
           openapi-url: https://api.istreamplanet.com/openapi.json
+          command-args: --skip-validate-spec
       - name: print-diff
         shell: bash
         run: |
