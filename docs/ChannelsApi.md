@@ -35,10 +35,10 @@ m2m.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new IStreamPlanetChannelsApi.ChannelsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'ifUnmodifiedSince': new Date("2013-10-20T19:20:30+01:00"), // Date | Succeeds if the server's resource date is older or the same as the passed date.
   'ifMatch': ["null"], // [String] | Succeeds if the server's resource matches one of the passed values.
   'ifNoneMatch': ["null"], // [String] | Succeeds if the server's resource matches none of the passed values. On writes, the special value * may be used to match any existing value.
-  'ifModifiedSince': new Date("2013-10-20T19:20:30+01:00") // Date | Succeeds if the server's resource date is more recent than the passed date.
+  'ifModifiedSince': new Date("2013-10-20T19:20:30+01:00"), // Date | Succeeds if the server's resource date is more recent than the passed date.
+  'ifUnmodifiedSince': new Date("2013-10-20T19:20:30+01:00") // Date | Succeeds if the server's resource date is older or the same as the passed date.
 };
 apiInstance.deleteChannel(channelId, opts, (error, data, response) => {
   if (error) {
@@ -55,10 +55,10 @@ apiInstance.deleteChannel(channelId, opts, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelId** | **String**| Unique channel identifier | 
- **ifUnmodifiedSince** | **Date**| Succeeds if the server&#39;s resource date is older or the same as the passed date. | [optional] 
  **ifMatch** | [**[String]**](String.md)| Succeeds if the server&#39;s resource matches one of the passed values. | [optional] 
  **ifNoneMatch** | [**[String]**](String.md)| Succeeds if the server&#39;s resource matches none of the passed values. On writes, the special value * may be used to match any existing value. | [optional] 
  **ifModifiedSince** | **Date**| Succeeds if the server&#39;s resource date is more recent than the passed date. | [optional] 
+ **ifUnmodifiedSince** | **Date**| Succeeds if the server&#39;s resource date is older or the same as the passed date. | [optional] 
 
 ### Return type
 
@@ -210,8 +210,8 @@ m2m.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new IStreamPlanetChannelsApi.ChannelsApi();
 let opts = {
-  'pageSize': 100, // Number | Number of items to return
   'cursor': "cursor_example", // String | Current page cursor
+  'pageSize': 100, // Number | Number of items to return
   'q': "q_example" // String | Search query to match against for filtering a list of channels. This searches the channel ID, name, labels, and source ID.
 };
 apiInstance.listChannels(opts, (error, data, response) => {
@@ -228,8 +228,8 @@ apiInstance.listChannels(opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pageSize** | **Number**| Number of items to return | [optional] [default to 100]
  **cursor** | **String**| Current page cursor | [optional] 
+ **pageSize** | **Number**| Number of items to return | [optional] [default to 100]
  **q** | **String**| Search query to match against for filtering a list of channels. This searches the channel ID, name, labels, and source ID. | [optional] 
 
 ### Return type
@@ -269,11 +269,11 @@ m2m.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new IStreamPlanetChannelsApi.ChannelsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
+  'validateOnly': true, // Boolean | Validate request but do not otherwise process it
   'ifMatch': ["null"], // [String] | Succeeds if the server's resource matches one of the passed values.
   'ifNoneMatch': ["null"], // [String] | Succeeds if the server's resource matches none of the passed values. On writes, the special value * may be used to match any existing value.
   'ifModifiedSince': new Date("2013-10-20T19:20:30+01:00"), // Date | Succeeds if the server's resource date is more recent than the passed date.
   'ifUnmodifiedSince': new Date("2013-10-20T19:20:30+01:00"), // Date | Succeeds if the server's resource date is older or the same as the passed date.
-  'validateOnly': true, // Boolean | Validate request but do not otherwise process it
   'putChannelRequest': new IStreamPlanetChannelsApi.PutChannelRequest() // PutChannelRequest | 
 };
 apiInstance.putChannel(channelId, opts, (error, data, response) => {
@@ -291,11 +291,11 @@ apiInstance.putChannel(channelId, opts, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelId** | **String**| Unique channel identifier | 
+ **validateOnly** | **Boolean**| Validate request but do not otherwise process it | [optional] 
  **ifMatch** | [**[String]**](String.md)| Succeeds if the server&#39;s resource matches one of the passed values. | [optional] 
  **ifNoneMatch** | [**[String]**](String.md)| Succeeds if the server&#39;s resource matches none of the passed values. On writes, the special value * may be used to match any existing value. | [optional] 
  **ifModifiedSince** | **Date**| Succeeds if the server&#39;s resource date is more recent than the passed date. | [optional] 
  **ifUnmodifiedSince** | **Date**| Succeeds if the server&#39;s resource date is older or the same as the passed date. | [optional] 
- **validateOnly** | **Boolean**| Validate request but do not otherwise process it | [optional] 
  **putChannelRequest** | [**PutChannelRequest**](PutChannelRequest.md)|  | [optional] 
 
 ### Return type

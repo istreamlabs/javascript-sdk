@@ -49,6 +49,9 @@ class InsertMetadataResult {
         if (data) {
             obj = obj || new InsertMetadataResult();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('presentation_time')) {
                 obj['presentation_time'] = ApiClient.convertToType(data['presentation_time'], 'Date');
             }
@@ -58,6 +61,12 @@ class InsertMetadataResult {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+InsertMetadataResult.prototype['$schema'] = undefined;
 
 /**
  * The media stream timestamp for where the transcoder inserted the metadata

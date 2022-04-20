@@ -48,6 +48,9 @@ class ChannelTranscodeH265 {
         if (data) {
             obj = obj || new ChannelTranscodeH265();
 
+            if (data.hasOwnProperty('hdr')) {
+                obj['hdr'] = ApiClient.convertToType(data['hdr'], Object);
+            }
             if (data.hasOwnProperty('profile')) {
                 obj['profile'] = ApiClient.convertToType(data['profile'], 'String');
             }
@@ -57,6 +60,12 @@ class ChannelTranscodeH265 {
 
 
 }
+
+/**
+ * Configure the HDR settings.
+ * @member {Object} hdr
+ */
+ChannelTranscodeH265.prototype['hdr'] = undefined;
 
 /**
  * H.265 video profile, which defines various encoder features and settings. See https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding#Profiles for details.

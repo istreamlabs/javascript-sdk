@@ -49,6 +49,9 @@ class Slate {
         if (data) {
             obj = obj || new Slate();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('duration')) {
                 obj['duration'] = ApiClient.convertToType(data['duration'], 'Number');
             }
@@ -61,6 +64,12 @@ class Slate {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+Slate.prototype['$schema'] = undefined;
 
 /**
  * Slate duration (ms)

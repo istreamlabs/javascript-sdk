@@ -49,6 +49,9 @@ class InsertMetadataRequest {
         if (data) {
             obj = obj || new InsertMetadataRequest();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('payload')) {
                 obj['payload'] = ApiClient.convertToType(data['payload'], 'String');
             }
@@ -58,6 +61,12 @@ class InsertMetadataRequest {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+InsertMetadataRequest.prototype['$schema'] = undefined;
 
 /**
  * ID3 payload as UTF-8 text

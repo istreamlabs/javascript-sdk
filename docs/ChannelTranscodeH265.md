@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**hdr** | **Object** | Configure the HDR settings. | [optional] 
 **profile** | **String** | H.265 video profile, which defines various encoder features and settings. See https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding#Profiles for details. | [optional] 
 
 

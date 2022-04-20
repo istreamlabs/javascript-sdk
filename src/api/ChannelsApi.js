@@ -51,10 +51,10 @@ export default class ChannelsApi {
      * Delete a channel and stop publishing.
      * @param {String} channelId Unique channel identifier
      * @param {Object} opts Optional parameters
-     * @param {Date} opts.ifUnmodifiedSince Succeeds if the server's resource date is older or the same as the passed date.
      * @param {Array.<String>} opts.ifMatch Succeeds if the server's resource matches one of the passed values.
      * @param {Array.<String>} opts.ifNoneMatch Succeeds if the server's resource matches none of the passed values. On writes, the special value * may be used to match any existing value.
      * @param {Date} opts.ifModifiedSince Succeeds if the server's resource date is more recent than the passed date.
+     * @param {Date} opts.ifUnmodifiedSince Succeeds if the server's resource date is older or the same as the passed date.
      * @param {module:api/ChannelsApi~deleteChannelCallback} callback The callback function, accepting three arguments: error, data, response
      */
     deleteChannel(channelId, opts, callback) {
@@ -71,10 +71,10 @@ export default class ChannelsApi {
       let queryParams = {
       };
       let headerParams = {
-        'If-Unmodified-Since': opts['ifUnmodifiedSince'],
         'If-Match': opts['ifMatch'],
         'If-None-Match': opts['ifNoneMatch'],
-        'If-Modified-Since': opts['ifModifiedSince']
+        'If-Modified-Since': opts['ifModifiedSince'],
+        'If-Unmodified-Since': opts['ifUnmodifiedSince']
       };
       let formParams = {
       };
@@ -198,8 +198,8 @@ export default class ChannelsApi {
      * List channels
      * Get a list of your channels.
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.pageSize Number of items to return (default to 100)
      * @param {String} opts.cursor Current page cursor
+     * @param {Number} opts.pageSize Number of items to return (default to 100)
      * @param {String} opts.q Search query to match against for filtering a list of channels. This searches the channel ID, name, labels, and source ID.
      * @param {module:api/ChannelsApi~listChannelsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Summary2>}
@@ -211,8 +211,8 @@ export default class ChannelsApi {
       let pathParams = {
       };
       let queryParams = {
-        'page_size': opts['pageSize'],
         'cursor': opts['cursor'],
+        'page_size': opts['pageSize'],
         'q': opts['q']
       };
       let headerParams = {
@@ -244,11 +244,11 @@ export default class ChannelsApi {
      * Create or update an existing channel configuration.
      * @param {String} channelId Unique channel identifier
      * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.validateOnly Validate request but do not otherwise process it
      * @param {Array.<String>} opts.ifMatch Succeeds if the server's resource matches one of the passed values.
      * @param {Array.<String>} opts.ifNoneMatch Succeeds if the server's resource matches none of the passed values. On writes, the special value * may be used to match any existing value.
      * @param {Date} opts.ifModifiedSince Succeeds if the server's resource date is more recent than the passed date.
      * @param {Date} opts.ifUnmodifiedSince Succeeds if the server's resource date is older or the same as the passed date.
-     * @param {Boolean} opts.validateOnly Validate request but do not otherwise process it
      * @param {module:model/PutChannelRequest} opts.putChannelRequest 
      * @param {module:api/ChannelsApi~putChannelCallback} callback The callback function, accepting three arguments: error, data, response
      */

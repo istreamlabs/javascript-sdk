@@ -48,6 +48,9 @@ class ErrorModel {
         if (data) {
             obj = obj || new ErrorModel();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('detail')) {
                 obj['detail'] = ApiClient.convertToType(data['detail'], 'String');
             }
@@ -72,6 +75,12 @@ class ErrorModel {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+ErrorModel.prototype['$schema'] = undefined;
 
 /**
  * A human-readable explanation specific to this occurrence of the problem.

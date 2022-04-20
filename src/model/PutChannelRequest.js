@@ -55,6 +55,9 @@ class PutChannelRequest {
         if (data) {
             obj = obj || new PutChannelRequest();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('created')) {
                 obj['created'] = ApiClient.convertToType(data['created'], 'Date');
             }
@@ -103,6 +106,12 @@ class PutChannelRequest {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+PutChannelRequest.prototype['$schema'] = undefined;
 
 /**
  * Date and time the channel was created.

@@ -51,6 +51,9 @@ class Source {
         if (data) {
             obj = obj || new Source();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('id')) {
                 obj['id'] = ApiClient.convertToType(data['id'], 'String');
             }
@@ -66,6 +69,12 @@ class Source {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+Source.prototype['$schema'] = undefined;
 
 /**
  * Unique source ID
