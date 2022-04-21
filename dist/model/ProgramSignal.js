@@ -57,6 +57,10 @@ var ProgramSignal = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ProgramSignal();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('event_id')) {
           obj['event_id'] = _ApiClient["default"].convertToType(data['event_id'], 'Number');
         }
@@ -69,10 +73,16 @@ var ProgramSignal = /*#__PURE__*/function () {
   return ProgramSignal;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+ProgramSignal.prototype['$schema'] = undefined;
+/**
  * Event ID
  * @member {Number} event_id
  */
-
 
 ProgramSignal.prototype['event_id'] = undefined;
 var _default = ProgramSignal;

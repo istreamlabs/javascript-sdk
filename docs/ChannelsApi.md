@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 Delete channel
 
-Delete a channel and stop publishing.
+Delete a channel and stop publishing.  This action is idempotent.
 
 ### Example
 
@@ -35,10 +35,10 @@ m2m.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new IStreamPlanetChannelsApi.ChannelsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
+  'ifUnmodifiedSince': new Date("2013-10-20T19:20:30+01:00"), // Date | Succeeds if the server's resource date is older or the same as the passed date.
   'ifMatch': ["null"], // [String] | Succeeds if the server's resource matches one of the passed values.
   'ifNoneMatch': ["null"], // [String] | Succeeds if the server's resource matches none of the passed values. On writes, the special value * may be used to match any existing value.
-  'ifModifiedSince': new Date("2013-10-20T19:20:30+01:00"), // Date | Succeeds if the server's resource date is more recent than the passed date.
-  'ifUnmodifiedSince': new Date("2013-10-20T19:20:30+01:00") // Date | Succeeds if the server's resource date is older or the same as the passed date.
+  'ifModifiedSince': new Date("2013-10-20T19:20:30+01:00") // Date | Succeeds if the server's resource date is more recent than the passed date.
 };
 apiInstance.deleteChannel(channelId, opts, (error, data, response) => {
   if (error) {
@@ -55,10 +55,10 @@ apiInstance.deleteChannel(channelId, opts, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **channelId** | **String**| Unique channel identifier | 
+ **ifUnmodifiedSince** | **Date**| Succeeds if the server&#39;s resource date is older or the same as the passed date. | [optional] 
  **ifMatch** | [**[String]**](String.md)| Succeeds if the server&#39;s resource matches one of the passed values. | [optional] 
  **ifNoneMatch** | [**[String]**](String.md)| Succeeds if the server&#39;s resource matches none of the passed values. On writes, the special value * may be used to match any existing value. | [optional] 
  **ifModifiedSince** | **Date**| Succeeds if the server&#39;s resource date is more recent than the passed date. | [optional] 
- **ifUnmodifiedSince** | **Date**| Succeeds if the server&#39;s resource date is older or the same as the passed date. | [optional] 
 
 ### Return type
 

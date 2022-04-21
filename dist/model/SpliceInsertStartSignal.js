@@ -57,6 +57,10 @@ var SpliceInsertStartSignal = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new SpliceInsertStartSignal();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('duration')) {
           obj['duration'] = _ApiClient["default"].convertToType(data['duration'], 'Number');
         }
@@ -81,11 +85,17 @@ var SpliceInsertStartSignal = /*#__PURE__*/function () {
   return SpliceInsertStartSignal;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+SpliceInsertStartSignal.prototype['$schema'] = undefined;
+/**
  * Splice duration (ms).  If no duration or a duration of 0 then the splice is indifinite.
  * @member {Number} duration
  * @default 0
  */
-
 
 SpliceInsertStartSignal.prototype['duration'] = 0;
 /**

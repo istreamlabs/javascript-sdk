@@ -71,6 +71,10 @@ var Channel = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new Channel();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('created')) {
           obj['created'] = _ApiClient["default"].convertToType(data['created'], 'Date');
         }
@@ -135,10 +139,16 @@ var Channel = /*#__PURE__*/function () {
   return Channel;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+Channel.prototype['$schema'] = undefined;
+/**
  * Date and time the channel was created.
  * @member {Date} created
  */
-
 
 Channel.prototype['created'] = undefined;
 /**
