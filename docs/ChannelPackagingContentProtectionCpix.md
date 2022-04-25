@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix
+# Isp.ChannelPackagingContentProtectionCpix
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPlayback();
+    instance = new Isp.ChannelPlayback();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,31 @@
   describe('ChannelPlayback', function() {
     it('should create an instance of ChannelPlayback', function() {
       // uncomment below and update the code to test ChannelPlayback
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlayback();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPlayback);
+      //var instance = new Isp.ChannelPlayback();
+      //expect(instance).to.be.a(Isp.ChannelPlayback);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.ChannelPlayback();
+      //expect(instance).to.be();
     });
 
     it('should have the property cmaf (base name: "cmaf")', function() {
       // uncomment below and update the code to test the property cmaf
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlayback();
+      //var instance = new Isp.ChannelPlayback();
       //expect(instance).to.be();
     });
 
     it('should have the property dash (base name: "dash")', function() {
       // uncomment below and update the code to test the property dash
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlayback();
+      //var instance = new Isp.ChannelPlayback();
       //expect(instance).to.be();
     });
 
     it('should have the property hls (base name: "hls")', function() {
       // uncomment below and update the code to test the property hls
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlayback();
+      //var instance = new Isp.ChannelPlayback();
       //expect(instance).to.be();
     });
 

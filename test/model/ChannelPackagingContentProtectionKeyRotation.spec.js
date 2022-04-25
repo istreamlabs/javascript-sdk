@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation();
+    instance = new Isp.ChannelPackagingContentProtectionKeyRotation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ChannelPackagingContentProtectionKeyRotation', function() {
     it('should create an instance of ChannelPackagingContentProtectionKeyRotation', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionKeyRotation
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation);
+      //var instance = new Isp.ChannelPackagingContentProtectionKeyRotation();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionKeyRotation);
     });
 
     it('should have the property intervalSecs (base name: "interval_secs")', function() {
       // uncomment below and update the code to test the property intervalSecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation();
+      //var instance = new Isp.ChannelPackagingContentProtectionKeyRotation();
       //expect(instance).to.be();
     });
 
     it('should have the property program (base name: "program")', function() {
       // uncomment below and update the code to test the property program
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation();
+      //var instance = new Isp.ChannelPackagingContentProtectionKeyRotation();
       //expect(instance).to.be();
     });
 
     it('should have the property programOverlapSkipEncrypt (base name: "program_overlap_skip_encrypt")', function() {
       // uncomment below and update the code to test the property programOverlapSkipEncrypt
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation();
+      //var instance = new Isp.ChannelPackagingContentProtectionKeyRotation();
       //expect(instance).to.be();
     });
 

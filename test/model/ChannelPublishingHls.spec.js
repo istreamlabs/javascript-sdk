@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+    instance = new Isp.ChannelPublishingHls();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('ChannelPublishingHls', function() {
     it('should create an instance of ChannelPublishingHls', function() {
       // uncomment below and update the code to test ChannelPublishingHls
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingHls);
+      //var instance = new Isp.ChannelPublishingHls();
+      //expect(instance).to.be.a(Isp.ChannelPublishingHls);
     });
 
     it('should have the property audioOnlyVariants (base name: "audio_only_variants")', function() {
       // uncomment below and update the code to test the property audioOnlyVariants
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property gapTags (base name: "gap_tags")', function() {
       // uncomment below and update the code to test the property gapTags
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property masterPublishFrequencySecs (base name: "master_publish_frequency_secs")', function() {
       // uncomment below and update the code to test the property masterPublishFrequencySecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property masterUrlType (base name: "master_url_type")', function() {
       // uncomment below and update the code to test the property masterUrlType
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property mediaUrlType (base name: "media_url_type")', function() {
       // uncomment below and update the code to test the property mediaUrlType
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property partialPresentations (base name: "partial_presentations")', function() {
       // uncomment below and update the code to test the property partialPresentations
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
-    it('should have the property pdtOnEverySecond (base name: "pdt_on_every_second")', function() {
-      // uncomment below and update the code to test the property pdtOnEverySecond
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+    it('should have the property pdtOnEverySegment (base name: "pdt_on_every_segment")', function() {
+      // uncomment below and update the code to test the property pdtOnEverySegment
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property signalingFormats (base name: "signaling_formats")', function() {
       // uncomment below and update the code to test the property signalingFormats
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 
     it('should have the property utcInSegmentTitle (base name: "utc_in_segment_title")', function() {
       // uncomment below and update the code to test the property utcInSegmentTitle
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHls();
+      //var instance = new Isp.ChannelPublishingHls();
       //expect(instance).to.be();
     });
 

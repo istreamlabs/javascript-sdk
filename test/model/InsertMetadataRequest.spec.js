@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.InsertMetadataRequest();
+    instance = new Isp.InsertMetadataRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,19 @@
   describe('InsertMetadataRequest', function() {
     it('should create an instance of InsertMetadataRequest', function() {
       // uncomment below and update the code to test InsertMetadataRequest
-      //var instance = new IStreamPlanetChannelsApi.InsertMetadataRequest();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.InsertMetadataRequest);
+      //var instance = new Isp.InsertMetadataRequest();
+      //expect(instance).to.be.a(Isp.InsertMetadataRequest);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.InsertMetadataRequest();
+      //expect(instance).to.be();
     });
 
     it('should have the property payload (base name: "payload")', function() {
       // uncomment below and update the code to test the property payload
-      //var instance = new IStreamPlanetChannelsApi.InsertMetadataRequest();
+      //var instance = new Isp.InsertMetadataRequest();
       //expect(instance).to.be();
     });
 

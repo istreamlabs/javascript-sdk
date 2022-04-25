@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.Summary2Source();
+    instance = new Isp.Summary2Source();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Summary2Source', function() {
     it('should create an instance of Summary2Source', function() {
       // uncomment below and update the code to test Summary2Source
-      //var instance = new IStreamPlanetChannelsApi.Summary2Source();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.Summary2Source);
+      //var instance = new Isp.Summary2Source();
+      //expect(instance).to.be.a(Isp.Summary2Source);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.Summary2Source();
+      //var instance = new Isp.Summary2Source();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new IStreamPlanetChannelsApi.Summary2Source();
+      //var instance = new Isp.Summary2Source();
       //expect(instance).to.be();
     });
 
     it('should have the property self (base name: "self")', function() {
       // uncomment below and update the code to test the property self
-      //var instance = new IStreamPlanetChannelsApi.Summary2Source();
+      //var instance = new Isp.Summary2Source();
       //expect(instance).to.be();
     });
 

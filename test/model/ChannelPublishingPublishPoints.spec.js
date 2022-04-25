@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingPublishPoints();
+    instance = new Isp.ChannelPublishingPublishPoints();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ChannelPublishingPublishPoints', function() {
     it('should create an instance of ChannelPublishingPublishPoints', function() {
       // uncomment below and update the code to test ChannelPublishingPublishPoints
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublishPoints();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingPublishPoints);
+      //var instance = new Isp.ChannelPublishingPublishPoints();
+      //expect(instance).to.be.a(Isp.ChannelPublishingPublishPoints);
     });
 
     it('should have the property http (base name: "http")', function() {
       // uncomment below and update the code to test the property http
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublishPoints();
+      //var instance = new Isp.ChannelPublishingPublishPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublishPoints();
+      //var instance = new Isp.ChannelPublishingPublishPoints();
       //expect(instance).to.be();
     });
 
     it('should have the property playlistOnlyFor (base name: "playlist_only_for")', function() {
       // uncomment below and update the code to test the property playlistOnlyFor
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublishPoints();
+      //var instance = new Isp.ChannelPublishingPublishPoints();
       //expect(instance).to.be();
     });
 

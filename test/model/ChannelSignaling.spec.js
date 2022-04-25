@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelSignaling();
+    instance = new Isp.ChannelSignaling();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelSignaling', function() {
     it('should create an instance of ChannelSignaling', function() {
       // uncomment below and update the code to test ChannelSignaling
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignaling();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelSignaling);
+      //var instance = new Isp.ChannelSignaling();
+      //expect(instance).to.be.a(Isp.ChannelSignaling);
     });
 
     it('should have the property blackoutSettings (base name: "blackout_settings")', function() {
       // uncomment below and update the code to test the property blackoutSettings
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignaling();
+      //var instance = new Isp.ChannelSignaling();
       //expect(instance).to.be();
     });
 
     it('should have the property disableInbandParsing (base name: "disable_inband_parsing")', function() {
       // uncomment below and update the code to test the property disableInbandParsing
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignaling();
+      //var instance = new Isp.ChannelSignaling();
       //expect(instance).to.be();
     });
 
     it('should have the property segmentSettings (base name: "segment_settings")', function() {
       // uncomment below and update the code to test the property segmentSettings
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignaling();
+      //var instance = new Isp.ChannelSignaling();
       //expect(instance).to.be();
     });
 
     it('should have the property segments (base name: "segments")', function() {
       // uncomment below and update the code to test the property segments
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignaling();
+      //var instance = new Isp.ChannelSignaling();
       //expect(instance).to.be();
     });
 

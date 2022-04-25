@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.SpliceInsertStartSignal
+# Isp.SpliceInsertStartSignal
 
 ## Properties
 

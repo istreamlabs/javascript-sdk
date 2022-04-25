@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates();
+    instance = new Isp.ChannelSignalingBlackoutSettingsSlates();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ChannelSignalingBlackoutSettingsSlates', function() {
     it('should create an instance of ChannelSignalingBlackoutSettingsSlates', function() {
       // uncomment below and update the code to test ChannelSignalingBlackoutSettingsSlates
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates);
+      //var instance = new Isp.ChannelSignalingBlackoutSettingsSlates();
+      //expect(instance).to.be.a(Isp.ChannelSignalingBlackoutSettingsSlates);
     });
 
     it('should have the property blackoutSlateUrl (base name: "blackout_slate_url")', function() {
       // uncomment below and update the code to test the property blackoutSlateUrl
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates();
+      //var instance = new Isp.ChannelSignalingBlackoutSettingsSlates();
       //expect(instance).to.be();
     });
 
     it('should have the property segments (base name: "segments")', function() {
       // uncomment below and update the code to test the property segments
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates();
+      //var instance = new Isp.ChannelSignalingBlackoutSettingsSlates();
       //expect(instance).to.be();
     });
 
     it('should have the property upids (base name: "upids")', function() {
       // uncomment below and update the code to test the property upids
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates();
+      //var instance = new Isp.ChannelSignalingBlackoutSettingsSlates();
       //expect(instance).to.be();
     });
 

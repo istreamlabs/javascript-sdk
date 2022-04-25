@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimpleBasicAuth();
+    instance = new Isp.ChannelPackagingContentProtectionSimpleBasicAuth();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ChannelPackagingContentProtectionSimpleBasicAuth', function() {
     it('should create an instance of ChannelPackagingContentProtectionSimpleBasicAuth', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionSimpleBasicAuth
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimpleBasicAuth();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimpleBasicAuth);
+      //var instance = new Isp.ChannelPackagingContentProtectionSimpleBasicAuth();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionSimpleBasicAuth);
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimpleBasicAuth();
+      //var instance = new Isp.ChannelPackagingContentProtectionSimpleBasicAuth();
       //expect(instance).to.be();
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimpleBasicAuth();
+      //var instance = new Isp.ChannelPackagingContentProtectionSimpleBasicAuth();
       //expect(instance).to.be();
     });
 

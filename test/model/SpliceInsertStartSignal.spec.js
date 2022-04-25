@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.SpliceInsertStartSignal();
+    instance = new Isp.SpliceInsertStartSignal();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,37 @@
   describe('SpliceInsertStartSignal', function() {
     it('should create an instance of SpliceInsertStartSignal', function() {
       // uncomment below and update the code to test SpliceInsertStartSignal
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertStartSignal();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.SpliceInsertStartSignal);
+      //var instance = new Isp.SpliceInsertStartSignal();
+      //expect(instance).to.be.a(Isp.SpliceInsertStartSignal);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.SpliceInsertStartSignal();
+      //expect(instance).to.be();
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertStartSignal();
+      //var instance = new Isp.SpliceInsertStartSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property eventId (base name: "event_id")', function() {
       // uncomment below and update the code to test the property eventId
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertStartSignal();
+      //var instance = new Isp.SpliceInsertStartSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property slateUri (base name: "slate_uri")', function() {
       // uncomment below and update the code to test the property slateUri
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertStartSignal();
+      //var instance = new Isp.SpliceInsertStartSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property upids (base name: "upids")', function() {
       // uncomment below and update the code to test the property upids
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertStartSignal();
+      //var instance = new Isp.SpliceInsertStartSignal();
       //expect(instance).to.be();
     });
 

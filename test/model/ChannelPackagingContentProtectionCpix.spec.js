@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+    instance = new Isp.ChannelPackagingContentProtectionCpix();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ChannelPackagingContentProtectionCpix', function() {
     it('should create an instance of ChannelPackagingContentProtectionCpix', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionCpix
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix);
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionCpix);
     });
 
     it('should have the property certificatesId (base name: "certificates_id")', function() {
       // uncomment below and update the code to test the property certificatesId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 
     it('should have the property contentId (base name: "content_id")', function() {
       // uncomment below and update the code to test the property contentId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 
     it('should have the property credentialsId (base name: "credentials_id")', function() {
       // uncomment below and update the code to test the property credentialsId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 
     it('should have the property decryptionKeyId (base name: "decryption_key_id")', function() {
       // uncomment below and update the code to test the property decryptionKeyId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 
     it('should have the property drms (base name: "drms")', function() {
       // uncomment below and update the code to test the property drms
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 
     it('should have the property headersId (base name: "headers_id")', function() {
       // uncomment below and update the code to test the property headersId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 
     it('should have the property uri (base name: "uri")', function() {
       // uncomment below and update the code to test the property uri
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix();
+      //var instance = new Isp.ChannelPackagingContentProtectionCpix();
       //expect(instance).to.be();
     });
 

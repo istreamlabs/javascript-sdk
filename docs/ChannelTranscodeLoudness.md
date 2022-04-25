@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTranscodeLoudness
+# Isp.ChannelTranscodeLoudness
 
 ## Properties
 

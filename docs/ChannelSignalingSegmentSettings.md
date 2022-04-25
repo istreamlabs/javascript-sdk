@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings
+# Isp.ChannelSignalingSegmentSettings
 
 ## Properties
 

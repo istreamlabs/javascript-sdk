@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.AuditOperationsApi
+# Isp.AuditOperationsApi
 
 All URIs are relative to *https://api.istreamplanet.com*
 
@@ -19,8 +19,8 @@ Returns up to twenty items from the event timeline for a channel, sorted in reve
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -28,7 +28,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.AuditOperationsApi();
+let apiInstance = new Isp.AuditOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
   'offset': 56 // Number | Number of items to skip when calling a paginated API

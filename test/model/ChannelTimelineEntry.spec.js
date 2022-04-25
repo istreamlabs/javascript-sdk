@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+    instance = new Isp.ChannelTimelineEntry();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('ChannelTimelineEntry', function() {
     it('should create an instance of ChannelTimelineEntry', function() {
       // uncomment below and update the code to test ChannelTimelineEntry
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTimelineEntry);
+      //var instance = new Isp.ChannelTimelineEntry();
+      //expect(instance).to.be.a(Isp.ChannelTimelineEntry);
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+      //var instance = new Isp.ChannelTimelineEntry();
       //expect(instance).to.be();
     });
 
     it('should have the property agent (base name: "agent")', function() {
       // uncomment below and update the code to test the property agent
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+      //var instance = new Isp.ChannelTimelineEntry();
       //expect(instance).to.be();
     });
 
     it('should have the property requestBody (base name: "request_body")', function() {
       // uncomment below and update the code to test the property requestBody
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+      //var instance = new Isp.ChannelTimelineEntry();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "status_code")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+      //var instance = new Isp.ChannelTimelineEntry();
       //expect(instance).to.be();
     });
 
     it('should have the property timestamp (base name: "timestamp")', function() {
       // uncomment below and update the code to test the property timestamp
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+      //var instance = new Isp.ChannelTimelineEntry();
       //expect(instance).to.be();
     });
 
     it('should have the property traceId (base name: "trace_id")', function() {
       // uncomment below and update the code to test the property traceId
-      //var instance = new IStreamPlanetChannelsApi.ChannelTimelineEntry();
+      //var instance = new Isp.ChannelTimelineEntry();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources();
+    instance = new Isp.ChannelIngestSourceAudioSources();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelIngestSourceAudioSources', function() {
     it('should create an instance of ChannelIngestSourceAudioSources', function() {
       // uncomment below and update the code to test ChannelIngestSourceAudioSources
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources);
+      //var instance = new Isp.ChannelIngestSourceAudioSources();
+      //expect(instance).to.be.a(Isp.ChannelIngestSourceAudioSources);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources();
+      //var instance = new Isp.ChannelIngestSourceAudioSources();
       //expect(instance).to.be();
     });
 
     it('should have the property language (base name: "language")', function() {
       // uncomment below and update the code to test the property language
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources();
+      //var instance = new Isp.ChannelIngestSourceAudioSources();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources();
+      //var instance = new Isp.ChannelIngestSourceAudioSources();
       //expect(instance).to.be();
     });
 
     it('should have the property selector (base name: "selector")', function() {
       // uncomment below and update the code to test the property selector
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources();
+      //var instance = new Isp.ChannelIngestSourceAudioSources();
       //expect(instance).to.be();
     });
 

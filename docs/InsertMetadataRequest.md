@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.InsertMetadataRequest
+# Isp.InsertMetadataRequest
 
 ## Properties
 

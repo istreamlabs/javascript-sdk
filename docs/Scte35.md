@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.Scte35
+# Isp.Scte35
 
 ## Properties
 

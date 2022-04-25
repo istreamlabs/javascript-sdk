@@ -72,7 +72,6 @@ docs/Summary2.md
 docs/Summary2Source.md
 git_push.sh
 mocha.opts
-package.json
 src/ApiClient.js
 src/api/AuditOperationsApi.js
 src/api/ChannelOperationsApi.js

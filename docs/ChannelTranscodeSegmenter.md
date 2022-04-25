@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTranscodeSegmenter
+# Isp.ChannelTranscodeSegmenter
 
 ## Properties
 

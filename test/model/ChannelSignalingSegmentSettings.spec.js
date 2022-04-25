@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+    instance = new Isp.ChannelSignalingSegmentSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('ChannelSignalingSegmentSettings', function() {
     it('should create an instance of ChannelSignalingSegmentSettings', function() {
       // uncomment below and update the code to test ChannelSignalingSegmentSettings
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings);
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
+      //expect(instance).to.be.a(Isp.ChannelSignalingSegmentSettings);
     });
 
     it('should have the property defaultDurationSecs (base name: "default_duration_secs")', function() {
       // uncomment below and update the code to test the property defaultDurationSecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property emitDefaultDuration (base name: "emit_default_duration")', function() {
       // uncomment below and update the code to test the property emitDefaultDuration
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property offsetMillis (base name: "offset_millis")', function() {
       // uncomment below and update the code to test the property offsetMillis
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property segmentEndMode (base name: "segment_end_mode")', function() {
       // uncomment below and update the code to test the property segmentEndMode
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property segments (base name: "segments")', function() {
       // uncomment below and update the code to test the property segments
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property tierFilter (base name: "tier_filter")', function() {
       // uncomment below and update the code to test the property tierFilter
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings();
+      //var instance = new Isp.ChannelSignalingSegmentSettings();
       //expect(instance).to.be();
     });
 

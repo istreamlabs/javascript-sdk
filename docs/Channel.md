@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.Channel
+# Isp.Channel
 
 ## Properties
 

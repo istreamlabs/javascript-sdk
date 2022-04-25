@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingDash();
+    instance = new Isp.ChannelPublishingDash();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelPublishingDash', function() {
     it('should create an instance of ChannelPublishingDash', function() {
       // uncomment below and update the code to test ChannelPublishingDash
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingDash();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingDash);
+      //var instance = new Isp.ChannelPublishingDash();
+      //expect(instance).to.be.a(Isp.ChannelPublishingDash);
     });
 
     it('should have the property minimumUpdatePeriodSecs (base name: "minimum_update_period_secs")', function() {
       // uncomment below and update the code to test the property minimumUpdatePeriodSecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingDash();
+      //var instance = new Isp.ChannelPublishingDash();
       //expect(instance).to.be();
     });
 
     it('should have the property signalingFormats (base name: "signaling_formats")', function() {
       // uncomment below and update the code to test the property signalingFormats
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingDash();
+      //var instance = new Isp.ChannelPublishingDash();
       //expect(instance).to.be();
     });
 
     it('should have the property suggestedPresentationDelaySecs (base name: "suggested_presentation_delay_secs")', function() {
       // uncomment below and update the code to test the property suggestedPresentationDelaySecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingDash();
+      //var instance = new Isp.ChannelPublishingDash();
       //expect(instance).to.be();
     });
 
     it('should have the property urlType (base name: "url_type")', function() {
       // uncomment below and update the code to test the property urlType
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingDash();
+      //var instance = new Isp.ChannelPublishingDash();
       //expect(instance).to.be();
     });
 

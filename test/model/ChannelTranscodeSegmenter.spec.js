@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscodeSegmenter();
+    instance = new Isp.ChannelTranscodeSegmenter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelTranscodeSegmenter', function() {
     it('should create an instance of ChannelTranscodeSegmenter', function() {
       // uncomment below and update the code to test ChannelTranscodeSegmenter
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeSegmenter();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscodeSegmenter);
+      //var instance = new Isp.ChannelTranscodeSegmenter();
+      //expect(instance).to.be.a(Isp.ChannelTranscodeSegmenter);
     });
 
     it('should have the property gopDurationSecs (base name: "gop_duration_secs")', function() {
       // uncomment below and update the code to test the property gopDurationSecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeSegmenter();
+      //var instance = new Isp.ChannelTranscodeSegmenter();
       //expect(instance).to.be();
     });
 
     it('should have the property partialsMode (base name: "partials_mode")', function() {
       // uncomment below and update the code to test the property partialsMode
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeSegmenter();
+      //var instance = new Isp.ChannelTranscodeSegmenter();
       //expect(instance).to.be();
     });
 
     it('should have the property segmentDurationSecs (base name: "segment_duration_secs")', function() {
       // uncomment below and update the code to test the property segmentDurationSecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeSegmenter();
+      //var instance = new Isp.ChannelTranscodeSegmenter();
       //expect(instance).to.be();
     });
 
     it('should have the property temi (base name: "temi")', function() {
       // uncomment below and update the code to test the property temi
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeSegmenter();
+      //var instance = new Isp.ChannelTranscodeSegmenter();
       //expect(instance).to.be();
     });
 

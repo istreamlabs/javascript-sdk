@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCommon();
+    instance = new Isp.ChannelPackagingContentProtectionCommon();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelPackagingContentProtectionCommon', function() {
     it('should create an instance of ChannelPackagingContentProtectionCommon', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionCommon
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCommon();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCommon);
+      //var instance = new Isp.ChannelPackagingContentProtectionCommon();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionCommon);
     });
 
     it('should have the property schemeType (base name: "scheme_type")', function() {
       // uncomment below and update the code to test the property schemeType
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCommon();
+      //var instance = new Isp.ChannelPackagingContentProtectionCommon();
       //expect(instance).to.be();
     });
 

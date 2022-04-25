@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+    instance = new Isp.ChannelPublishingHttp();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('ChannelPublishingHttp', function() {
     it('should create an instance of ChannelPublishingHttp', function() {
       // uncomment below and update the code to test ChannelPublishingHttp
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingHttp);
+      //var instance = new Isp.ChannelPublishingHttp();
+      //expect(instance).to.be.a(Isp.ChannelPublishingHttp);
     });
 
     it('should have the property basicAuth (base name: "basic_auth")', function() {
       // uncomment below and update the code to test the property basicAuth
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property compression (base name: "compression")', function() {
       // uncomment below and update the code to test the property compression
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property crossPlaybackPaths (base name: "cross_playback_paths")', function() {
       // uncomment below and update the code to test the property crossPlaybackPaths
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property doNotMonitor (base name: "do_not_monitor")', function() {
       // uncomment below and update the code to test the property doNotMonitor
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property headers (base name: "headers")', function() {
       // uncomment below and update the code to test the property headers
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property method (base name: "method")', function() {
       // uncomment below and update the code to test the property method
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property playbackBaseUrl (base name: "playback_base_url")', function() {
       // uncomment below and update the code to test the property playbackBaseUrl
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property playbackQueryParams (base name: "playback_query_params")', function() {
       // uncomment below and update the code to test the property playbackQueryParams
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 
     it('should have the property publishBaseUrl (base name: "publish_base_url")', function() {
       // uncomment below and update the code to test the property publishBaseUrl
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHttp();
+      //var instance = new Isp.ChannelPublishingHttp();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimple();
+    instance = new Isp.ChannelPackagingContentProtectionSimple();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ChannelPackagingContentProtectionSimple', function() {
     it('should create an instance of ChannelPackagingContentProtectionSimple', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionSimple
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimple();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimple);
+      //var instance = new Isp.ChannelPackagingContentProtectionSimple();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionSimple);
     });
 
     it('should have the property publishPoints (base name: "publish_points")', function() {
       // uncomment below and update the code to test the property publishPoints
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimple();
+      //var instance = new Isp.ChannelPackagingContentProtectionSimple();
       //expect(instance).to.be();
     });
 
     it('should have the property requirePublish (base name: "require_publish")', function() {
       // uncomment below and update the code to test the property requirePublish
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimple();
+      //var instance = new Isp.ChannelPackagingContentProtectionSimple();
       //expect(instance).to.be();
     });
 

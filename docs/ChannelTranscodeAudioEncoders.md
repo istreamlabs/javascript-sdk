@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders
+# Isp.ChannelTranscodeAudioEncoders
 
 ## Properties
 

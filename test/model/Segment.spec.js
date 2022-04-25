@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.Segment();
+    instance = new Isp.Segment();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('Segment', function() {
     it('should create an instance of Segment', function() {
       // uncomment below and update the code to test Segment
-      //var instance = new IStreamPlanetChannelsApi.Segment();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.Segment);
+      //var instance = new Isp.Segment();
+      //expect(instance).to.be.a(Isp.Segment);
     });
 
     it('should have the property end (base name: "end")', function() {
       // uncomment below and update the code to test the property end
-      //var instance = new IStreamPlanetChannelsApi.Segment();
+      //var instance = new Isp.Segment();
       //expect(instance).to.be();
     });
 
     it('should have the property eventId (base name: "event_id")', function() {
       // uncomment below and update the code to test the property eventId
-      //var instance = new IStreamPlanetChannelsApi.Segment();
+      //var instance = new Isp.Segment();
       //expect(instance).to.be();
     });
 
     it('should have the property segmentId (base name: "segment_id")', function() {
       // uncomment below and update the code to test the property segmentId
-      //var instance = new IStreamPlanetChannelsApi.Segment();
+      //var instance = new Isp.Segment();
       //expect(instance).to.be();
     });
 
     it('should have the property slateUrl (base name: "slate_url")', function() {
       // uncomment below and update the code to test the property slateUrl
-      //var instance = new IStreamPlanetChannelsApi.Segment();
+      //var instance = new Isp.Segment();
       //expect(instance).to.be();
     });
 
     it('should have the property start (base name: "start")', function() {
       // uncomment below and update the code to test the property start
-      //var instance = new IStreamPlanetChannelsApi.Segment();
+      //var instance = new Isp.Segment();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new IStreamPlanetChannelsApi.Segment();
+      //var instance = new Isp.Segment();
       //expect(instance).to.be();
     });
 

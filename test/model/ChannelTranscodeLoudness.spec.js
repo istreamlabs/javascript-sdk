@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscodeLoudness();
+    instance = new Isp.ChannelTranscodeLoudness();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelTranscodeLoudness', function() {
     it('should create an instance of ChannelTranscodeLoudness', function() {
       // uncomment below and update the code to test ChannelTranscodeLoudness
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeLoudness();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscodeLoudness);
+      //var instance = new Isp.ChannelTranscodeLoudness();
+      //expect(instance).to.be.a(Isp.ChannelTranscodeLoudness);
     });
 
     it('should have the property dialogIntel (base name: "dialog_intel")', function() {
       // uncomment below and update the code to test the property dialogIntel
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeLoudness();
+      //var instance = new Isp.ChannelTranscodeLoudness();
       //expect(instance).to.be();
     });
 
     it('should have the property lkfs (base name: "lkfs")', function() {
       // uncomment below and update the code to test the property lkfs
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeLoudness();
+      //var instance = new Isp.ChannelTranscodeLoudness();
       //expect(instance).to.be();
     });
 
     it('should have the property lra (base name: "lra")', function() {
       // uncomment below and update the code to test the property lra
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeLoudness();
+      //var instance = new Isp.ChannelTranscodeLoudness();
       //expect(instance).to.be();
     });
 
     it('should have the property peakLimit (base name: "peak_limit")', function() {
       // uncomment below and update the code to test the property peakLimit
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeLoudness();
+      //var instance = new Isp.ChannelTranscodeLoudness();
       //expect(instance).to.be();
     });
 

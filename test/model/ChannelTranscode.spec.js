@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+    instance = new Isp.ChannelTranscode();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ChannelTranscode', function() {
     it('should create an instance of ChannelTranscode', function() {
       // uncomment below and update the code to test ChannelTranscode
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscode);
+      //var instance = new Isp.ChannelTranscode();
+      //expect(instance).to.be.a(Isp.ChannelTranscode);
     });
 
     it('should have the property audioEncoders (base name: "audio_encoders")', function() {
       // uncomment below and update the code to test the property audioEncoders
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 
     it('should have the property featureFlags (base name: "feature_flags")', function() {
       // uncomment below and update the code to test the property featureFlags
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 
     it('should have the property id3Mode (base name: "id3_mode")', function() {
       // uncomment below and update the code to test the property id3Mode
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 
     it('should have the property resizeMode (base name: "resize_mode")', function() {
       // uncomment below and update the code to test the property resizeMode
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 
     it('should have the property segmenter (base name: "segmenter")', function() {
       // uncomment below and update the code to test the property segmenter
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbnailEncoders (base name: "thumbnail_encoders")', function() {
       // uncomment below and update the code to test the property thumbnailEncoders
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 
     it('should have the property videoEncoders (base name: "video_encoders")', function() {
       // uncomment below and update the code to test the property videoEncoders
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscode();
+      //var instance = new Isp.ChannelTranscode();
       //expect(instance).to.be();
     });
 

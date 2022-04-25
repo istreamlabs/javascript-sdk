@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.Segment
+# Isp.Segment
 
 ## Properties
 

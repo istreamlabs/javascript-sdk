@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTags();
+    instance = new Isp.ChannelTags();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelTags', function() {
     it('should create an instance of ChannelTags', function() {
       // uncomment below and update the code to test ChannelTags
-      //var instance = new IStreamPlanetChannelsApi.ChannelTags();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTags);
+      //var instance = new Isp.ChannelTags();
+      //expect(instance).to.be.a(Isp.ChannelTags);
     });
 
     it('should have the property monitored (base name: "monitored")', function() {
       // uncomment below and update the code to test the property monitored
-      //var instance = new IStreamPlanetChannelsApi.ChannelTags();
+      //var instance = new Isp.ChannelTags();
       //expect(instance).to.be();
     });
 

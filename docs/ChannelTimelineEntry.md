@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTimelineEntry
+# Isp.ChannelTimelineEntry
 
 ## Properties
 

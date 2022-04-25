@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTranscodeH265
+# Isp.ChannelTranscodeH265
 
 ## Properties
 

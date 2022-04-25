@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPlaybackCmaf
+# Isp.ChannelPlaybackCmaf
 
 ## Properties
 

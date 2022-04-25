@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas();
+    instance = new Isp.ChannelPackagingContentProtectionAtlas();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelPackagingContentProtectionAtlas', function() {
     it('should create an instance of ChannelPackagingContentProtectionAtlas', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionAtlas
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas);
+      //var instance = new Isp.ChannelPackagingContentProtectionAtlas();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionAtlas);
     });
 
     it('should have the property assetId (base name: "asset_id")', function() {
       // uncomment below and update the code to test the property assetId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas();
+      //var instance = new Isp.ChannelPackagingContentProtectionAtlas();
       //expect(instance).to.be();
     });
 
     it('should have the property companyId (base name: "company_id")', function() {
       // uncomment below and update the code to test the property companyId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas();
+      //var instance = new Isp.ChannelPackagingContentProtectionAtlas();
       //expect(instance).to.be();
     });
 
     it('should have the property drms (base name: "drms")', function() {
       // uncomment below and update the code to test the property drms
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas();
+      //var instance = new Isp.ChannelPackagingContentProtectionAtlas();
       //expect(instance).to.be();
     });
 
     it('should have the property widevineV0PsshBox (base name: "widevine_v0_pssh_box")', function() {
       // uncomment below and update the code to test the property widevineV0PsshBox
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas();
+      //var instance = new Isp.ChannelPackagingContentProtectionAtlas();
       //expect(instance).to.be();
     });
 

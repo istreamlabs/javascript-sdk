@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.PutChannelRequest
+# Isp.PutChannelRequest
 
 ## Properties
 

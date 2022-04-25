@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscodeH265();
+    instance = new Isp.ChannelTranscodeH265();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,19 @@
   describe('ChannelTranscodeH265', function() {
     it('should create an instance of ChannelTranscodeH265', function() {
       // uncomment below and update the code to test ChannelTranscodeH265
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeH265();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscodeH265);
+      //var instance = new Isp.ChannelTranscodeH265();
+      //expect(instance).to.be.a(Isp.ChannelTranscodeH265);
+    });
+
+    it('should have the property hdr (base name: "hdr")', function() {
+      // uncomment below and update the code to test the property hdr
+      //var instance = new Isp.ChannelTranscodeH265();
+      //expect(instance).to.be();
     });
 
     it('should have the property profile (base name: "profile")', function() {
       // uncomment below and update the code to test the property profile
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeH265();
+      //var instance = new Isp.ChannelTranscodeH265();
       //expect(instance).to.be();
     });
 

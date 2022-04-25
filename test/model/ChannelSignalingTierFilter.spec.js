@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelSignalingTierFilter();
+    instance = new Isp.ChannelSignalingTierFilter();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelSignalingTierFilter', function() {
     it('should create an instance of ChannelSignalingTierFilter', function() {
       // uncomment below and update the code to test ChannelSignalingTierFilter
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingTierFilter();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelSignalingTierFilter);
+      //var instance = new Isp.ChannelSignalingTierFilter();
+      //expect(instance).to.be.a(Isp.ChannelSignalingTierFilter);
     });
 
     it('should have the property explicitTier (base name: "explicit_tier")', function() {
       // uncomment below and update the code to test the property explicitTier
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingTierFilter();
+      //var instance = new Isp.ChannelSignalingTierFilter();
       //expect(instance).to.be();
     });
 

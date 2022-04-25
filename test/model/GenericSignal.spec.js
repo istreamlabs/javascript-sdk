@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.GenericSignal();
+    instance = new Isp.GenericSignal();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('GenericSignal', function() {
     it('should create an instance of GenericSignal', function() {
       // uncomment below and update the code to test GenericSignal
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.GenericSignal);
+      //var instance = new Isp.GenericSignal();
+      //expect(instance).to.be.a(Isp.GenericSignal);
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property eventId (base name: "event_id")', function() {
       // uncomment below and update the code to test the property eventId
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property segmentType (base name: "segment_type")', function() {
       // uncomment below and update the code to test the property segmentType
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property signalType (base name: "signal_type")', function() {
       // uncomment below and update the code to test the property signalType
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property slateUri (base name: "slate_uri")', function() {
       // uncomment below and update the code to test the property slateUri
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 
     it('should have the property upids (base name: "upids")', function() {
       // uncomment below and update the code to test the property upids
-      //var instance = new IStreamPlanetChannelsApi.GenericSignal();
+      //var instance = new Isp.GenericSignal();
       //expect(instance).to.be();
     });
 

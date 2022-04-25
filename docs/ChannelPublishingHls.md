@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPublishingHls
+# Isp.ChannelPublishingHls
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPublishingLive2vod
+# Isp.ChannelPublishingLive2vod
 
 ## Properties
 

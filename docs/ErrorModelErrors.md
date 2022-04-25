@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ErrorModelErrors
+# Isp.ErrorModelErrors
 
 ## Properties
 

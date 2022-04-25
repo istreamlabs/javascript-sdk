@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPlaybackContentProtection
+# Isp.ChannelPlaybackContentProtection
 
 ## Properties
 

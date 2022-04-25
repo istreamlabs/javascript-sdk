@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams
+# Isp.ChannelPublishingClosedCaptionStreams
 
 ## Properties
 

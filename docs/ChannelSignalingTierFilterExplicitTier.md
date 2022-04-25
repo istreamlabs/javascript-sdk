@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelSignalingTierFilterExplicitTier
+# Isp.ChannelSignalingTierFilterExplicitTier
 
 ## Properties
 
