@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.PutChannelRequestIngestSource();
+    instance = new Isp.PutChannelRequestIngestSource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('PutChannelRequestIngestSource', function() {
     it('should create an instance of PutChannelRequestIngestSource', function() {
       // uncomment below and update the code to test PutChannelRequestIngestSource
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngestSource();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.PutChannelRequestIngestSource);
+      //var instance = new Isp.PutChannelRequestIngestSource();
+      //expect(instance).to.be.a(Isp.PutChannelRequestIngestSource);
     });
 
     it('should have the property audioSources (base name: "audio_sources")', function() {
       // uncomment below and update the code to test the property audioSources
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngestSource();
+      //var instance = new Isp.PutChannelRequestIngestSource();
       //expect(instance).to.be();
     });
 
     it('should have the property captionsSource (base name: "captions_source")', function() {
       // uncomment below and update the code to test the property captionsSource
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngestSource();
+      //var instance = new Isp.PutChannelRequestIngestSource();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngestSource();
+      //var instance = new Isp.PutChannelRequestIngestSource();
       //expect(instance).to.be();
     });
 
     it('should have the property self (base name: "self")', function() {
       // uncomment below and update the code to test the property self
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngestSource();
+      //var instance = new Isp.PutChannelRequestIngestSource();
       //expect(instance).to.be();
     });
 

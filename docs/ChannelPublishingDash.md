@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPublishingDash
+# Isp.ChannelPublishingDash
 
 ## Properties
 

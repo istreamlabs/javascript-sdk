@@ -57,6 +57,10 @@ var InsertMetadataRequest = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new InsertMetadataRequest();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('payload')) {
           obj['payload'] = _ApiClient["default"].convertToType(data['payload'], 'String');
         }
@@ -69,10 +73,16 @@ var InsertMetadataRequest = /*#__PURE__*/function () {
   return InsertMetadataRequest;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+InsertMetadataRequest.prototype['$schema'] = undefined;
+/**
  * ID3 payload as UTF-8 text
  * @member {String} payload
  */
-
 
 InsertMetadataRequest.prototype['payload'] = undefined;
 var _default = InsertMetadataRequest;

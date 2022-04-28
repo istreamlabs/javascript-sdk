@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.SourcesApi();
+    instance = new Isp.SourcesApi();
   });
 
   var getProperty = function(object, getter, property) {

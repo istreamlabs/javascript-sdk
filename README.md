@@ -1,6 +1,6 @@
-# i_stream_planet_channels_api
+# isp
 
-IStreamPlanetChannelsApi - JavaScript client for i_stream_planet_channels_api
+Isp - JavaScript client for isp
 This API provides a way to list, create, and run channels.
 
 Channels consist of inputs (ingest), transcoding settings like codecs and bitrates, and outputs (publishing).
@@ -25,7 +25,7 @@ To publish the library as a [npm](https://www.npmjs.com/), please follow the pro
 Then install it via:
 
 ```shell
-npm install i_stream_planet_channels_api --save
+npm install isp --save
 ```
 
 Finally, you need to build the module:
@@ -48,7 +48,7 @@ Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the follow
 npm link
 ```
 
-To use the link you just defined in your project, switch to the directory you want to use your i_stream_planet_channels_api from, and run:
+To use the link you just defined in your project, switch to the directory you want to use your isp from, and run:
 
 ```shell
 npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
@@ -104,9 +104,9 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var IStreamPlanetChannelsApi = require('i_stream_planet_channels_api');
+var Isp = require('isp');
 
-var defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+var defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 var authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = "YOUR ACCESS TOKEN"
@@ -114,7 +114,7 @@ authcode.accessToken = "YOUR ACCESS TOKEN"
 var m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = "YOUR ACCESS TOKEN"
 
-var api = new IStreamPlanetChannelsApi.AuditOperationsApi()
+var api = new Isp.AuditOperationsApi()
 var channelId = "channelId_example"; // {String} Unique channel identifier
 var opts = {
   'offset': 56 // {Number} Number of items to skip when calling a paginated API
@@ -136,94 +136,94 @@ All URIs are relative to *https://api.istreamplanet.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*IStreamPlanetChannelsApi.AuditOperationsApi* | [**getChannelTimeline**](docs/AuditOperationsApi.md#getChannelTimeline) | **GET** /v2/channels/{channel-id}/timeline | Get Channel Timeline
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**clearDvrWindow**](docs/ChannelOperationsApi.md#clearDvrWindow) | **DELETE** /v2/channels/{channel-id}/dvr-window | Clear DVR Window
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**getSignals**](docs/ChannelOperationsApi.md#getSignals) | **GET** /v2/channels/{channel-id}/signal | Get Signals
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**insertId3**](docs/ChannelOperationsApi.md#insertId3) | **POST** /v2/channels/{channel-id}/id3 | Insert ID3
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**insertScte35**](docs/ChannelOperationsApi.md#insertScte35) | **POST** /v2/channels/{channel-id}/scte35 | Insert SCTE-35
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**previewImage**](docs/ChannelOperationsApi.md#previewImage) | **GET** /v2/channels/{channel-id}/preview-image | Get Preview Image
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**programEnd**](docs/ChannelOperationsApi.md#programEnd) | **POST** /v2/channels/{channel-id}/program-end | Program End
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**programStart**](docs/ChannelOperationsApi.md#programStart) | **POST** /v2/channels/{channel-id}/program-start | Program Start
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**signal**](docs/ChannelOperationsApi.md#signal) | **POST** /v2/channels/{channel-id}/signal | Generic Signal
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**slateIn**](docs/ChannelOperationsApi.md#slateIn) | **POST** /v2/channels/{channel-id}/slate | Slate in
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**slateOut**](docs/ChannelOperationsApi.md#slateOut) | **DELETE** /v2/channels/{channel-id}/slate | Slate out
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**spliceEnd**](docs/ChannelOperationsApi.md#spliceEnd) | **POST** /v2/channels/{channel-id}/splice-end | Splice Insert End
-*IStreamPlanetChannelsApi.ChannelOperationsApi* | [**spliceStart**](docs/ChannelOperationsApi.md#spliceStart) | **POST** /v2/channels/{channel-id}/splice-start | Splice Insert Start
-*IStreamPlanetChannelsApi.ChannelsApi* | [**deleteChannel**](docs/ChannelsApi.md#deleteChannel) | **DELETE** /v2/channels/{channel-id} | Delete channel
-*IStreamPlanetChannelsApi.ChannelsApi* | [**getChannel**](docs/ChannelsApi.md#getChannel) | **GET** /v2/channels/{channel-id} | Get Channel
-*IStreamPlanetChannelsApi.ChannelsApi* | [**getPlaybackConfig**](docs/ChannelsApi.md#getPlaybackConfig) | **GET** /v2/channels/{channel-id}/playback | Get Channel Playback Config
-*IStreamPlanetChannelsApi.ChannelsApi* | [**listChannels**](docs/ChannelsApi.md#listChannels) | **GET** /v2/channels | List channels
-*IStreamPlanetChannelsApi.ChannelsApi* | [**putChannel**](docs/ChannelsApi.md#putChannel) | **PUT** /v2/channels/{channel-id} | Create/Update channel
-*IStreamPlanetChannelsApi.SourcesApi* | [**getSource**](docs/SourcesApi.md#getSource) | **GET** /v2/sources/{source-id} | Get Source
-*IStreamPlanetChannelsApi.SourcesApi* | [**listSources**](docs/SourcesApi.md#listSources) | **GET** /v2/sources | List Sources
+*Isp.AuditOperationsApi* | [**getChannelTimeline**](docs/AuditOperationsApi.md#getChannelTimeline) | **GET** /v2/channels/{channel-id}/timeline | Get Channel Timeline
+*Isp.ChannelOperationsApi* | [**clearDvrWindow**](docs/ChannelOperationsApi.md#clearDvrWindow) | **DELETE** /v2/channels/{channel-id}/dvr-window | Clear DVR Window
+*Isp.ChannelOperationsApi* | [**getSignals**](docs/ChannelOperationsApi.md#getSignals) | **GET** /v2/channels/{channel-id}/signal | Get Signals
+*Isp.ChannelOperationsApi* | [**insertId3**](docs/ChannelOperationsApi.md#insertId3) | **POST** /v2/channels/{channel-id}/id3 | Insert ID3
+*Isp.ChannelOperationsApi* | [**insertScte35**](docs/ChannelOperationsApi.md#insertScte35) | **POST** /v2/channels/{channel-id}/scte35 | Insert SCTE-35
+*Isp.ChannelOperationsApi* | [**previewImage**](docs/ChannelOperationsApi.md#previewImage) | **GET** /v2/channels/{channel-id}/preview-image | Get Preview Image
+*Isp.ChannelOperationsApi* | [**programEnd**](docs/ChannelOperationsApi.md#programEnd) | **POST** /v2/channels/{channel-id}/program-end | Program End
+*Isp.ChannelOperationsApi* | [**programStart**](docs/ChannelOperationsApi.md#programStart) | **POST** /v2/channels/{channel-id}/program-start | Program Start
+*Isp.ChannelOperationsApi* | [**signal**](docs/ChannelOperationsApi.md#signal) | **POST** /v2/channels/{channel-id}/signal | Generic Signal
+*Isp.ChannelOperationsApi* | [**slateIn**](docs/ChannelOperationsApi.md#slateIn) | **POST** /v2/channels/{channel-id}/slate | Slate in
+*Isp.ChannelOperationsApi* | [**slateOut**](docs/ChannelOperationsApi.md#slateOut) | **DELETE** /v2/channels/{channel-id}/slate | Slate out
+*Isp.ChannelOperationsApi* | [**spliceEnd**](docs/ChannelOperationsApi.md#spliceEnd) | **POST** /v2/channels/{channel-id}/splice-end | Splice Insert End
+*Isp.ChannelOperationsApi* | [**spliceStart**](docs/ChannelOperationsApi.md#spliceStart) | **POST** /v2/channels/{channel-id}/splice-start | Splice Insert Start
+*Isp.ChannelsApi* | [**deleteChannel**](docs/ChannelsApi.md#deleteChannel) | **DELETE** /v2/channels/{channel-id} | Delete channel
+*Isp.ChannelsApi* | [**getChannel**](docs/ChannelsApi.md#getChannel) | **GET** /v2/channels/{channel-id} | Get Channel
+*Isp.ChannelsApi* | [**getPlaybackConfig**](docs/ChannelsApi.md#getPlaybackConfig) | **GET** /v2/channels/{channel-id}/playback | Get Channel Playback Config
+*Isp.ChannelsApi* | [**listChannels**](docs/ChannelsApi.md#listChannels) | **GET** /v2/channels | List channels
+*Isp.ChannelsApi* | [**putChannel**](docs/ChannelsApi.md#putChannel) | **PUT** /v2/channels/{channel-id} | Create/Update channel
+*Isp.SourcesApi* | [**getSource**](docs/SourcesApi.md#getSource) | **GET** /v2/sources/{source-id} | Get Source
+*Isp.SourcesApi* | [**listSources**](docs/SourcesApi.md#listSources) | **GET** /v2/sources | List Sources
 
 
 ## Documentation for Models
 
- - [IStreamPlanetChannelsApi.Channel](docs/Channel.md)
- - [IStreamPlanetChannelsApi.ChannelIngest](docs/ChannelIngest.md)
- - [IStreamPlanetChannelsApi.ChannelIngestSlate](docs/ChannelIngestSlate.md)
- - [IStreamPlanetChannelsApi.ChannelIngestSource](docs/ChannelIngestSource.md)
- - [IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources](docs/ChannelIngestSourceAudioSources.md)
- - [IStreamPlanetChannelsApi.ChannelPackaging](docs/ChannelPackaging.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtection](docs/ChannelPackagingContentProtection.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionAtlas](docs/ChannelPackagingContentProtectionAtlas.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionBulkFile](docs/ChannelPackagingContentProtectionBulkFile.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCommon](docs/ChannelPackagingContentProtectionCommon.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionCpix](docs/ChannelPackagingContentProtectionCpix.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation](docs/ChannelPackagingContentProtectionKeyRotation.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimple](docs/ChannelPackagingContentProtectionSimple.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimpleBasicAuth](docs/ChannelPackagingContentProtectionSimpleBasicAuth.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingContentProtectionSimplePublishPoints](docs/ChannelPackagingContentProtectionSimplePublishPoints.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingMp2t](docs/ChannelPackagingMp2t.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingMp4](docs/ChannelPackagingMp4.md)
- - [IStreamPlanetChannelsApi.ChannelPackagingPackagers](docs/ChannelPackagingPackagers.md)
- - [IStreamPlanetChannelsApi.ChannelPlayback](docs/ChannelPlayback.md)
- - [IStreamPlanetChannelsApi.ChannelPlaybackCmaf](docs/ChannelPlaybackCmaf.md)
- - [IStreamPlanetChannelsApi.ChannelPlaybackContentProtection](docs/ChannelPlaybackContentProtection.md)
- - [IStreamPlanetChannelsApi.ChannelPublishing](docs/ChannelPublishing.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams](docs/ChannelPublishingClosedCaptionStreams.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingDash](docs/ChannelPublishingDash.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingHls](docs/ChannelPublishingHls.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations](docs/ChannelPublishingHlsPartialPresentations.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingHttp](docs/ChannelPublishingHttp.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingLive2vod](docs/ChannelPublishingLive2vod.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingPublications](docs/ChannelPublishingPublications.md)
- - [IStreamPlanetChannelsApi.ChannelPublishingPublishPoints](docs/ChannelPublishingPublishPoints.md)
- - [IStreamPlanetChannelsApi.ChannelSignaling](docs/ChannelSignaling.md)
- - [IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings](docs/ChannelSignalingBlackoutSettings.md)
- - [IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettingsSlates](docs/ChannelSignalingBlackoutSettingsSlates.md)
- - [IStreamPlanetChannelsApi.ChannelSignalingSegmentSettings](docs/ChannelSignalingSegmentSettings.md)
- - [IStreamPlanetChannelsApi.ChannelSignalingTierFilter](docs/ChannelSignalingTierFilter.md)
- - [IStreamPlanetChannelsApi.ChannelSignalingTierFilterExplicitTier](docs/ChannelSignalingTierFilterExplicitTier.md)
- - [IStreamPlanetChannelsApi.ChannelTags](docs/ChannelTags.md)
- - [IStreamPlanetChannelsApi.ChannelTimelineEntry](docs/ChannelTimelineEntry.md)
- - [IStreamPlanetChannelsApi.ChannelTranscode](docs/ChannelTranscode.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders](docs/ChannelTranscodeAudioEncoders.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeH264](docs/ChannelTranscodeH264.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeH265](docs/ChannelTranscodeH265.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeLoudness](docs/ChannelTranscodeLoudness.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeSegmenter](docs/ChannelTranscodeSegmenter.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders](docs/ChannelTranscodeThumbnailEncoders.md)
- - [IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders](docs/ChannelTranscodeVideoEncoders.md)
- - [IStreamPlanetChannelsApi.ErrorModel](docs/ErrorModel.md)
- - [IStreamPlanetChannelsApi.ErrorModelErrors](docs/ErrorModelErrors.md)
- - [IStreamPlanetChannelsApi.GenericSignal](docs/GenericSignal.md)
- - [IStreamPlanetChannelsApi.InsertMetadataRequest](docs/InsertMetadataRequest.md)
- - [IStreamPlanetChannelsApi.InsertMetadataResult](docs/InsertMetadataResult.md)
- - [IStreamPlanetChannelsApi.ProgramSignal](docs/ProgramSignal.md)
- - [IStreamPlanetChannelsApi.PutChannelRequest](docs/PutChannelRequest.md)
- - [IStreamPlanetChannelsApi.PutChannelRequestIngest](docs/PutChannelRequestIngest.md)
- - [IStreamPlanetChannelsApi.PutChannelRequestIngestSource](docs/PutChannelRequestIngestSource.md)
- - [IStreamPlanetChannelsApi.Scte35](docs/Scte35.md)
- - [IStreamPlanetChannelsApi.Segment](docs/Segment.md)
- - [IStreamPlanetChannelsApi.Slate](docs/Slate.md)
- - [IStreamPlanetChannelsApi.Source](docs/Source.md)
- - [IStreamPlanetChannelsApi.SpliceInsertEndSignal](docs/SpliceInsertEndSignal.md)
- - [IStreamPlanetChannelsApi.SpliceInsertStartSignal](docs/SpliceInsertStartSignal.md)
- - [IStreamPlanetChannelsApi.Summary](docs/Summary.md)
- - [IStreamPlanetChannelsApi.Summary2](docs/Summary2.md)
- - [IStreamPlanetChannelsApi.Summary2Source](docs/Summary2Source.md)
+ - [Isp.Channel](docs/Channel.md)
+ - [Isp.ChannelIngest](docs/ChannelIngest.md)
+ - [Isp.ChannelIngestSlate](docs/ChannelIngestSlate.md)
+ - [Isp.ChannelIngestSource](docs/ChannelIngestSource.md)
+ - [Isp.ChannelIngestSourceAudioSources](docs/ChannelIngestSourceAudioSources.md)
+ - [Isp.ChannelPackaging](docs/ChannelPackaging.md)
+ - [Isp.ChannelPackagingContentProtection](docs/ChannelPackagingContentProtection.md)
+ - [Isp.ChannelPackagingContentProtectionAtlas](docs/ChannelPackagingContentProtectionAtlas.md)
+ - [Isp.ChannelPackagingContentProtectionBulkFile](docs/ChannelPackagingContentProtectionBulkFile.md)
+ - [Isp.ChannelPackagingContentProtectionCommon](docs/ChannelPackagingContentProtectionCommon.md)
+ - [Isp.ChannelPackagingContentProtectionCpix](docs/ChannelPackagingContentProtectionCpix.md)
+ - [Isp.ChannelPackagingContentProtectionKeyRotation](docs/ChannelPackagingContentProtectionKeyRotation.md)
+ - [Isp.ChannelPackagingContentProtectionSimple](docs/ChannelPackagingContentProtectionSimple.md)
+ - [Isp.ChannelPackagingContentProtectionSimpleBasicAuth](docs/ChannelPackagingContentProtectionSimpleBasicAuth.md)
+ - [Isp.ChannelPackagingContentProtectionSimplePublishPoints](docs/ChannelPackagingContentProtectionSimplePublishPoints.md)
+ - [Isp.ChannelPackagingMp2t](docs/ChannelPackagingMp2t.md)
+ - [Isp.ChannelPackagingMp4](docs/ChannelPackagingMp4.md)
+ - [Isp.ChannelPackagingPackagers](docs/ChannelPackagingPackagers.md)
+ - [Isp.ChannelPlayback](docs/ChannelPlayback.md)
+ - [Isp.ChannelPlaybackCmaf](docs/ChannelPlaybackCmaf.md)
+ - [Isp.ChannelPlaybackContentProtection](docs/ChannelPlaybackContentProtection.md)
+ - [Isp.ChannelPublishing](docs/ChannelPublishing.md)
+ - [Isp.ChannelPublishingClosedCaptionStreams](docs/ChannelPublishingClosedCaptionStreams.md)
+ - [Isp.ChannelPublishingDash](docs/ChannelPublishingDash.md)
+ - [Isp.ChannelPublishingHls](docs/ChannelPublishingHls.md)
+ - [Isp.ChannelPublishingHlsPartialPresentations](docs/ChannelPublishingHlsPartialPresentations.md)
+ - [Isp.ChannelPublishingHttp](docs/ChannelPublishingHttp.md)
+ - [Isp.ChannelPublishingLive2vod](docs/ChannelPublishingLive2vod.md)
+ - [Isp.ChannelPublishingPublications](docs/ChannelPublishingPublications.md)
+ - [Isp.ChannelPublishingPublishPoints](docs/ChannelPublishingPublishPoints.md)
+ - [Isp.ChannelSignaling](docs/ChannelSignaling.md)
+ - [Isp.ChannelSignalingBlackoutSettings](docs/ChannelSignalingBlackoutSettings.md)
+ - [Isp.ChannelSignalingBlackoutSettingsSlates](docs/ChannelSignalingBlackoutSettingsSlates.md)
+ - [Isp.ChannelSignalingSegmentSettings](docs/ChannelSignalingSegmentSettings.md)
+ - [Isp.ChannelSignalingTierFilter](docs/ChannelSignalingTierFilter.md)
+ - [Isp.ChannelSignalingTierFilterExplicitTier](docs/ChannelSignalingTierFilterExplicitTier.md)
+ - [Isp.ChannelTags](docs/ChannelTags.md)
+ - [Isp.ChannelTimelineEntry](docs/ChannelTimelineEntry.md)
+ - [Isp.ChannelTranscode](docs/ChannelTranscode.md)
+ - [Isp.ChannelTranscodeAudioEncoders](docs/ChannelTranscodeAudioEncoders.md)
+ - [Isp.ChannelTranscodeH264](docs/ChannelTranscodeH264.md)
+ - [Isp.ChannelTranscodeH265](docs/ChannelTranscodeH265.md)
+ - [Isp.ChannelTranscodeLoudness](docs/ChannelTranscodeLoudness.md)
+ - [Isp.ChannelTranscodeSegmenter](docs/ChannelTranscodeSegmenter.md)
+ - [Isp.ChannelTranscodeThumbnailEncoders](docs/ChannelTranscodeThumbnailEncoders.md)
+ - [Isp.ChannelTranscodeVideoEncoders](docs/ChannelTranscodeVideoEncoders.md)
+ - [Isp.ErrorModel](docs/ErrorModel.md)
+ - [Isp.ErrorModelErrors](docs/ErrorModelErrors.md)
+ - [Isp.GenericSignal](docs/GenericSignal.md)
+ - [Isp.InsertMetadataRequest](docs/InsertMetadataRequest.md)
+ - [Isp.InsertMetadataResult](docs/InsertMetadataResult.md)
+ - [Isp.ProgramSignal](docs/ProgramSignal.md)
+ - [Isp.PutChannelRequest](docs/PutChannelRequest.md)
+ - [Isp.PutChannelRequestIngest](docs/PutChannelRequestIngest.md)
+ - [Isp.PutChannelRequestIngestSource](docs/PutChannelRequestIngestSource.md)
+ - [Isp.Scte35](docs/Scte35.md)
+ - [Isp.Segment](docs/Segment.md)
+ - [Isp.Slate](docs/Slate.md)
+ - [Isp.Source](docs/Source.md)
+ - [Isp.SpliceInsertEndSignal](docs/SpliceInsertEndSignal.md)
+ - [Isp.SpliceInsertStartSignal](docs/SpliceInsertStartSignal.md)
+ - [Isp.Summary](docs/Summary.md)
+ - [Isp.Summary2](docs/Summary2.md)
+ - [Isp.Summary2Source](docs/Summary2Source.md)
 
 
 ## Documentation for Authorization

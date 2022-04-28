@@ -48,6 +48,9 @@ class ChannelPlayback {
         if (data) {
             obj = obj || new ChannelPlayback();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('cmaf')) {
                 obj['cmaf'] = ApiClient.convertToType(data['cmaf'], [ChannelPlaybackCmaf]);
             }
@@ -63,6 +66,12 @@ class ChannelPlayback {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+ChannelPlayback.prototype['$schema'] = undefined;
 
 /**
  * CMAF playback configurations

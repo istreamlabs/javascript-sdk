@@ -81,8 +81,8 @@ var ChannelPublishingHls = /*#__PURE__*/function () {
           obj['partial_presentations'] = _ApiClient["default"].convertToType(data['partial_presentations'], [_ChannelPublishingHlsPartialPresentations["default"]]);
         }
 
-        if (data.hasOwnProperty('pdt_on_every_second')) {
-          obj['pdt_on_every_second'] = _ApiClient["default"].convertToType(data['pdt_on_every_second'], 'Boolean');
+        if (data.hasOwnProperty('pdt_on_every_segment')) {
+          obj['pdt_on_every_segment'] = _ApiClient["default"].convertToType(data['pdt_on_every_segment'], 'Boolean');
         }
 
         if (data.hasOwnProperty('signaling_formats')) {
@@ -139,10 +139,10 @@ ChannelPublishingHls.prototype['media_url_type'] = undefined;
 ChannelPublishingHls.prototype['partial_presentations'] = undefined;
 /**
  * When true a #EXT-X-PROGRAM-DATE-TIME tag will be placed on every media segment in media playlists. When false, the default behavior, the PDT tag is set according to the HLS specification.
- * @member {Boolean} pdt_on_every_second
+ * @member {Boolean} pdt_on_every_segment
  */
 
-ChannelPublishingHls.prototype['pdt_on_every_second'] = undefined;
+ChannelPublishingHls.prototype['pdt_on_every_segment'] = undefined;
 /**
  * Signaling formats specifies which SCTE-35 timeline marker formatting to use when rendering playlists.
  * @member {Array.<module:model/ChannelPublishingHls.SignalingFormatsEnum>} signaling_formats

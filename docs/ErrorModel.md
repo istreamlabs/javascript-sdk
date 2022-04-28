@@ -1,9 +1,10 @@
-# IStreamPlanetChannelsApi.ErrorModel
+# Isp.ErrorModel
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**schema** | **String** | An optional URL to a JSON Schema document describing this resource | [optional] 
 **detail** | **String** | A human-readable explanation specific to this occurrence of the problem. | [optional] 
 **errors** | [**[ErrorModelErrors]**](ErrorModelErrors.md) | Optional list of individual error details | [optional] 
 **instance** | **String** | A URI reference that identifies the specific occurence of the problem. | [optional] 

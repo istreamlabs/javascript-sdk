@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelIngestSlate
+# Isp.ChannelIngestSlate
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTranscode
+# Isp.ChannelTranscode
 
 ## Properties
 

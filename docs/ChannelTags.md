@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTags
+# Isp.ChannelTags
 
 ## Properties
 

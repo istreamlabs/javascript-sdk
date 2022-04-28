@@ -49,6 +49,9 @@ class SpliceInsertEndSignal {
         if (data) {
             obj = obj || new SpliceInsertEndSignal();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('event_id')) {
                 obj['event_id'] = ApiClient.convertToType(data['event_id'], 'Number');
             }
@@ -58,6 +61,12 @@ class SpliceInsertEndSignal {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+SpliceInsertEndSignal.prototype['$schema'] = undefined;
 
 /**
  * Event ID

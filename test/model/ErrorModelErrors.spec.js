@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ErrorModelErrors();
+    instance = new Isp.ErrorModelErrors();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ErrorModelErrors', function() {
     it('should create an instance of ErrorModelErrors', function() {
       // uncomment below and update the code to test ErrorModelErrors
-      //var instance = new IStreamPlanetChannelsApi.ErrorModelErrors();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ErrorModelErrors);
+      //var instance = new Isp.ErrorModelErrors();
+      //expect(instance).to.be.a(Isp.ErrorModelErrors);
     });
 
     it('should have the property location (base name: "location")', function() {
       // uncomment below and update the code to test the property location
-      //var instance = new IStreamPlanetChannelsApi.ErrorModelErrors();
+      //var instance = new Isp.ErrorModelErrors();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new IStreamPlanetChannelsApi.ErrorModelErrors();
+      //var instance = new Isp.ErrorModelErrors();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new IStreamPlanetChannelsApi.ErrorModelErrors();
+      //var instance = new Isp.ErrorModelErrors();
       //expect(instance).to.be();
     });
 

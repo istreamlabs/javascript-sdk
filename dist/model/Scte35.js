@@ -57,6 +57,10 @@ var Scte35 = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new Scte35();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('payload')) {
           obj['payload'] = _ApiClient["default"].convertToType(data['payload'], 'String');
         }
@@ -69,10 +73,16 @@ var Scte35 = /*#__PURE__*/function () {
   return Scte35;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+Scte35.prototype['$schema'] = undefined;
+/**
  * The SCTE-35 payload, encoded as base-64 in JSON or binary data in CBOR
  * @member {String} payload
  */
-
 
 Scte35.prototype['payload'] = undefined;
 var _default = Scte35;

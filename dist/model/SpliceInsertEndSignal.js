@@ -57,6 +57,10 @@ var SpliceInsertEndSignal = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new SpliceInsertEndSignal();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('event_id')) {
           obj['event_id'] = _ApiClient["default"].convertToType(data['event_id'], 'Number');
         }
@@ -69,10 +73,16 @@ var SpliceInsertEndSignal = /*#__PURE__*/function () {
   return SpliceInsertEndSignal;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+SpliceInsertEndSignal.prototype['$schema'] = undefined;
+/**
  * Event ID
  * @member {Number} event_id
  */
-
 
 SpliceInsertEndSignal.prototype['event_id'] = undefined;
 var _default = SpliceInsertEndSignal;

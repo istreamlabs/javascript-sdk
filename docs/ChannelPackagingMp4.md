@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPackagingMp4
+# Isp.ChannelPackagingMp4
 
 ## Properties
 

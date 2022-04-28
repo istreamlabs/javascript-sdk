@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+    instance = new Isp.ChannelTranscodeAudioEncoders();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ChannelTranscodeAudioEncoders', function() {
     it('should create an instance of ChannelTranscodeAudioEncoders', function() {
       // uncomment below and update the code to test ChannelTranscodeAudioEncoders
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders);
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
+      //expect(instance).to.be.a(Isp.ChannelTranscodeAudioEncoders);
     });
 
     it('should have the property audioSourceId (base name: "audio_source_id")', function() {
       // uncomment below and update the code to test the property audioSourceId
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property bitRate (base name: "bit_rate")', function() {
       // uncomment below and update the code to test the property bitRate
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property channels (base name: "channels")', function() {
       // uncomment below and update the code to test the property channels
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property codec (base name: "codec")', function() {
       // uncomment below and update the code to test the property codec
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property loudness (base name: "loudness")', function() {
       // uncomment below and update the code to test the property loudness
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property sampleRate (base name: "sample_rate")', function() {
       // uncomment below and update the code to test the property sampleRate
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeAudioEncoders();
+      //var instance = new Isp.ChannelTranscodeAudioEncoders();
       //expect(instance).to.be();
     });
 

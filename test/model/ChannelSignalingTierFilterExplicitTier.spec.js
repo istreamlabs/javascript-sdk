@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelSignalingTierFilterExplicitTier();
+    instance = new Isp.ChannelSignalingTierFilterExplicitTier();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelSignalingTierFilterExplicitTier', function() {
     it('should create an instance of ChannelSignalingTierFilterExplicitTier', function() {
       // uncomment below and update the code to test ChannelSignalingTierFilterExplicitTier
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingTierFilterExplicitTier();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelSignalingTierFilterExplicitTier);
+      //var instance = new Isp.ChannelSignalingTierFilterExplicitTier();
+      //expect(instance).to.be.a(Isp.ChannelSignalingTierFilterExplicitTier);
     });
 
     it('should have the property values (base name: "values")', function() {
       // uncomment below and update the code to test the property values
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingTierFilterExplicitTier();
+      //var instance = new Isp.ChannelSignalingTierFilterExplicitTier();
       //expect(instance).to.be();
     });
 

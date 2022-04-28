@@ -49,6 +49,9 @@ class ProgramSignal {
         if (data) {
             obj = obj || new ProgramSignal();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('event_id')) {
                 obj['event_id'] = ApiClient.convertToType(data['event_id'], 'Number');
             }
@@ -58,6 +61,12 @@ class ProgramSignal {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+ProgramSignal.prototype['$schema'] = undefined;
 
 /**
  * Event ID

@@ -49,6 +49,9 @@ class Scte35 {
         if (data) {
             obj = obj || new Scte35();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('payload')) {
                 obj['payload'] = ApiClient.convertToType(data['payload'], 'String');
             }
@@ -58,6 +61,12 @@ class Scte35 {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+Scte35.prototype['$schema'] = undefined;
 
 /**
  * The SCTE-35 payload, encoded as base-64 in JSON or binary data in CBOR

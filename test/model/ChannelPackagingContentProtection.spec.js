@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+    instance = new Isp.ChannelPackagingContentProtection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ChannelPackagingContentProtection', function() {
     it('should create an instance of ChannelPackagingContentProtection', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtection
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtection);
+      //var instance = new Isp.ChannelPackagingContentProtection();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtection);
     });
 
     it('should have the property atlas (base name: "atlas")', function() {
       // uncomment below and update the code to test the property atlas
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 
     it('should have the property bulkFile (base name: "bulk_file")', function() {
       // uncomment below and update the code to test the property bulkFile
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 
     it('should have the property common (base name: "common")', function() {
       // uncomment below and update the code to test the property common
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 
     it('should have the property cpix (base name: "cpix")', function() {
       // uncomment below and update the code to test the property cpix
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 
     it('should have the property keyRotation (base name: "key_rotation")', function() {
       // uncomment below and update the code to test the property keyRotation
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 
     it('should have the property sampleAes (base name: "sample_aes")', function() {
       // uncomment below and update the code to test the property sampleAes
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 
     it('should have the property simple (base name: "simple")', function() {
       // uncomment below and update the code to test the property simple
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtection();
+      //var instance = new Isp.ChannelPackagingContentProtection();
       //expect(instance).to.be();
     });
 

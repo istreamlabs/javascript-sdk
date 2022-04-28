@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelIngestSlate();
+    instance = new Isp.ChannelIngestSlate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelIngestSlate', function() {
     it('should create an instance of ChannelIngestSlate', function() {
       // uncomment below and update the code to test ChannelIngestSlate
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSlate();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelIngestSlate);
+      //var instance = new Isp.ChannelIngestSlate();
+      //expect(instance).to.be.a(Isp.ChannelIngestSlate);
     });
 
     it('should have the property sourceLossUrl (base name: "source_loss_url")', function() {
       // uncomment below and update the code to test the property sourceLossUrl
-      //var instance = new IStreamPlanetChannelsApi.ChannelIngestSlate();
+      //var instance = new Isp.ChannelIngestSlate();
       //expect(instance).to.be();
     });
 

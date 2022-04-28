@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.SpliceInsertEndSignal();
+    instance = new Isp.SpliceInsertEndSignal();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,19 @@
   describe('SpliceInsertEndSignal', function() {
     it('should create an instance of SpliceInsertEndSignal', function() {
       // uncomment below and update the code to test SpliceInsertEndSignal
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertEndSignal();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.SpliceInsertEndSignal);
+      //var instance = new Isp.SpliceInsertEndSignal();
+      //expect(instance).to.be.a(Isp.SpliceInsertEndSignal);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.SpliceInsertEndSignal();
+      //expect(instance).to.be();
     });
 
     it('should have the property eventId (base name: "event_id")', function() {
       // uncomment below and update the code to test the property eventId
-      //var instance = new IStreamPlanetChannelsApi.SpliceInsertEndSignal();
+      //var instance = new Isp.SpliceInsertEndSignal();
       //expect(instance).to.be();
     });
 

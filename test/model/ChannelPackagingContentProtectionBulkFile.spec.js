@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionBulkFile();
+    instance = new Isp.ChannelPackagingContentProtectionBulkFile();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelPackagingContentProtectionBulkFile', function() {
     it('should create an instance of ChannelPackagingContentProtectionBulkFile', function() {
       // uncomment below and update the code to test ChannelPackagingContentProtectionBulkFile
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionBulkFile();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingContentProtectionBulkFile);
+      //var instance = new Isp.ChannelPackagingContentProtectionBulkFile();
+      //expect(instance).to.be.a(Isp.ChannelPackagingContentProtectionBulkFile);
     });
 
     it('should have the property ivRotation (base name: "iv_rotation")', function() {
       // uncomment below and update the code to test the property ivRotation
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingContentProtectionBulkFile();
+      //var instance = new Isp.ChannelPackagingContentProtectionBulkFile();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.Source();
+    instance = new Isp.Source();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,31 @@
   describe('Source', function() {
     it('should create an instance of Source', function() {
       // uncomment below and update the code to test Source
-      //var instance = new IStreamPlanetChannelsApi.Source();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.Source);
+      //var instance = new Isp.Source();
+      //expect(instance).to.be.a(Isp.Source);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.Source();
+      //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.Source();
+      //var instance = new Isp.Source();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new IStreamPlanetChannelsApi.Source();
+      //var instance = new Isp.Source();
       //expect(instance).to.be();
     });
 
     it('should have the property self (base name: "self")', function() {
       // uncomment below and update the code to test the property self
-      //var instance = new IStreamPlanetChannelsApi.Source();
+      //var instance = new Isp.Source();
       //expect(instance).to.be();
     });
 

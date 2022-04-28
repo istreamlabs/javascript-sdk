@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.GenericSignal
+# Isp.GenericSignal
 
 ## Properties
 

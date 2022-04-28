@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.SourcesApi
+# Isp.SourcesApi
 
 All URIs are relative to *https://api.istreamplanet.com*
 
@@ -20,8 +20,8 @@ Get a source&#39;s configuration
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -29,7 +29,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.SourcesApi();
+let apiInstance = new Isp.SourcesApi();
 let sourceId = "sourceId_example"; // String | Unique source identifier
 apiInstance.getSource(sourceId, (error, data, response) => {
   if (error) {
@@ -72,8 +72,8 @@ Get a list of sources that are used to create channels.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -81,7 +81,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.SourcesApi();
+let apiInstance = new Isp.SourcesApi();
 let opts = {
   'cursor': "cursor_example", // String | Current page cursor
   'pageSize': 100 // Number | Number of items to return

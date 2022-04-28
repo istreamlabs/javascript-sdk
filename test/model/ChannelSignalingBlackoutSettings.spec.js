@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings();
+    instance = new Isp.ChannelSignalingBlackoutSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelSignalingBlackoutSettings', function() {
     it('should create an instance of ChannelSignalingBlackoutSettings', function() {
       // uncomment below and update the code to test ChannelSignalingBlackoutSettings
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings);
+      //var instance = new Isp.ChannelSignalingBlackoutSettings();
+      //expect(instance).to.be.a(Isp.ChannelSignalingBlackoutSettings);
     });
 
     it('should have the property defaultBlackoutSlateUrl (base name: "default_blackout_slate_url")', function() {
       // uncomment below and update the code to test the property defaultBlackoutSlateUrl
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings();
+      //var instance = new Isp.ChannelSignalingBlackoutSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property forceBlackoutSegments (base name: "force_blackout_segments")', function() {
       // uncomment below and update the code to test the property forceBlackoutSegments
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings();
+      //var instance = new Isp.ChannelSignalingBlackoutSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property honorWebDeliveryRestriction (base name: "honor_web_delivery_restriction")', function() {
       // uncomment below and update the code to test the property honorWebDeliveryRestriction
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings();
+      //var instance = new Isp.ChannelSignalingBlackoutSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property slates (base name: "slates")', function() {
       // uncomment below and update the code to test the property slates
-      //var instance = new IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings();
+      //var instance = new Isp.ChannelSignalingBlackoutSettings();
       //expect(instance).to.be();
     });
 

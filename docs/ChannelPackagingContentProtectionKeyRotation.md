@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPackagingContentProtectionKeyRotation
+# Isp.ChannelPackagingContentProtectionKeyRotation
 
 ## Properties
 

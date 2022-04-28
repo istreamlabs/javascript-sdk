@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackaging();
+    instance = new Isp.ChannelPackaging();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ChannelPackaging', function() {
     it('should create an instance of ChannelPackaging', function() {
       // uncomment below and update the code to test ChannelPackaging
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackaging();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackaging);
+      //var instance = new Isp.ChannelPackaging();
+      //expect(instance).to.be.a(Isp.ChannelPackaging);
     });
 
     it('should have the property packagers (base name: "packagers")', function() {
       // uncomment below and update the code to test the property packagers
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackaging();
+      //var instance = new Isp.ChannelPackaging();
       //expect(instance).to.be();
     });
 

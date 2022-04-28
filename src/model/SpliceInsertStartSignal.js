@@ -49,6 +49,9 @@ class SpliceInsertStartSignal {
         if (data) {
             obj = obj || new SpliceInsertStartSignal();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('duration')) {
                 obj['duration'] = ApiClient.convertToType(data['duration'], 'Number');
             }
@@ -67,6 +70,12 @@ class SpliceInsertStartSignal {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+SpliceInsertStartSignal.prototype['$schema'] = undefined;
 
 /**
  * Splice duration (ms).  If no duration or a duration of 0 then the splice is indifinite.

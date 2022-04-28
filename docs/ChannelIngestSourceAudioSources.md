@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelIngestSourceAudioSources
+# Isp.ChannelIngestSourceAudioSources
 
 ## Properties
 

@@ -89,9 +89,9 @@ import SourcesApi from './api/SourcesApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var IStreamPlanetChannelsApi = require('index'); // See note below*.
-* var xxxSvc = new IStreamPlanetChannelsApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new IStreamPlanetChannelsApi.Yyy(); // Construct a model instance.
+* var Isp = require('index'); // See note below*.
+* var xxxSvc = new Isp.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new Isp.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -103,8 +103,8 @@ import SourcesApi from './api/SourcesApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new IStreamPlanetChannelsApi.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new IStreamPlanetChannelsApi.Yyy(); // Construct a model instance.
+* var xxxSvc = new Isp.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new Isp.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

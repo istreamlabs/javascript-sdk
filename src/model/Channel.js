@@ -57,6 +57,9 @@ class Channel {
         if (data) {
             obj = obj || new Channel();
 
+            if (data.hasOwnProperty('$schema')) {
+                obj['$schema'] = ApiClient.convertToType(data['$schema'], 'String');
+            }
             if (data.hasOwnProperty('created')) {
                 obj['created'] = ApiClient.convertToType(data['created'], 'Date');
             }
@@ -105,6 +108,12 @@ class Channel {
 
 
 }
+
+/**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+Channel.prototype['$schema'] = undefined;
 
 /**
  * Date and time the channel was created.

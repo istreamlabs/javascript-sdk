@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelPublishingPublishPoints
+# Isp.ChannelPublishingPublishPoints
 
 ## Properties
 

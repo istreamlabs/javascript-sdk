@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPlaybackCmaf();
+    instance = new Isp.ChannelPlaybackCmaf();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ChannelPlaybackCmaf', function() {
     it('should create an instance of ChannelPlaybackCmaf', function() {
       // uncomment below and update the code to test ChannelPlaybackCmaf
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlaybackCmaf();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPlaybackCmaf);
+      //var instance = new Isp.ChannelPlaybackCmaf();
+      //expect(instance).to.be.a(Isp.ChannelPlaybackCmaf);
     });
 
     it('should have the property contentProtection (base name: "content_protection")', function() {
       // uncomment below and update the code to test the property contentProtection
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlaybackCmaf();
+      //var instance = new Isp.ChannelPlaybackCmaf();
       //expect(instance).to.be();
     });
 
     it('should have the property partialPresentations (base name: "partial_presentations")', function() {
       // uncomment below and update the code to test the property partialPresentations
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlaybackCmaf();
+      //var instance = new Isp.ChannelPlaybackCmaf();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new IStreamPlanetChannelsApi.ChannelPlaybackCmaf();
+      //var instance = new Isp.ChannelPlaybackCmaf();
       //expect(instance).to.be();
     });
 

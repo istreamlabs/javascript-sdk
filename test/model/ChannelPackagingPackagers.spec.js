@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingPackagers();
+    instance = new Isp.ChannelPackagingPackagers();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ChannelPackagingPackagers', function() {
     it('should create an instance of ChannelPackagingPackagers', function() {
       // uncomment below and update the code to test ChannelPackagingPackagers
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingPackagers();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingPackagers);
+      //var instance = new Isp.ChannelPackagingPackagers();
+      //expect(instance).to.be.a(Isp.ChannelPackagingPackagers);
     });
 
     it('should have the property contentProtection (base name: "content_protection")', function() {
       // uncomment below and update the code to test the property contentProtection
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingPackagers();
+      //var instance = new Isp.ChannelPackagingPackagers();
       //expect(instance).to.be();
     });
 
     it('should have the property mp2t (base name: "mp2t")', function() {
       // uncomment below and update the code to test the property mp2t
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingPackagers();
+      //var instance = new Isp.ChannelPackagingPackagers();
       //expect(instance).to.be();
     });
 
     it('should have the property mp4 (base name: "mp4")', function() {
       // uncomment below and update the code to test the property mp4
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingPackagers();
+      //var instance = new Isp.ChannelPackagingPackagers();
       //expect(instance).to.be();
     });
 

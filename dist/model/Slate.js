@@ -57,6 +57,10 @@ var Slate = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new Slate();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('duration')) {
           obj['duration'] = _ApiClient["default"].convertToType(data['duration'], 'Number');
         }
@@ -73,11 +77,17 @@ var Slate = /*#__PURE__*/function () {
   return Slate;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+Slate.prototype['$schema'] = undefined;
+/**
  * Slate duration (ms)
  * @member {Number} duration
  * @default 0
  */
-
 
 Slate.prototype['duration'] = 0;
 /**

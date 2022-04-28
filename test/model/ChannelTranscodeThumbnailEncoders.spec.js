@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders();
+    instance = new Isp.ChannelTranscodeThumbnailEncoders();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ChannelTranscodeThumbnailEncoders', function() {
     it('should create an instance of ChannelTranscodeThumbnailEncoders', function() {
       // uncomment below and update the code to test ChannelTranscodeThumbnailEncoders
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders);
+      //var instance = new Isp.ChannelTranscodeThumbnailEncoders();
+      //expect(instance).to.be.a(Isp.ChannelTranscodeThumbnailEncoders);
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders();
+      //var instance = new Isp.ChannelTranscodeThumbnailEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders();
+      //var instance = new Isp.ChannelTranscodeThumbnailEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders();
+      //var instance = new Isp.ChannelTranscodeThumbnailEncoders();
       //expect(instance).to.be();
     });
 

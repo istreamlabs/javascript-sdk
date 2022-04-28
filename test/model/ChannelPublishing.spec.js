@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishing();
+    instance = new Isp.ChannelPublishing();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelPublishing', function() {
     it('should create an instance of ChannelPublishing', function() {
       // uncomment below and update the code to test ChannelPublishing
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishing();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishing);
+      //var instance = new Isp.ChannelPublishing();
+      //expect(instance).to.be.a(Isp.ChannelPublishing);
     });
 
     it('should have the property closedCaptionStreams (base name: "closed_caption_streams")', function() {
       // uncomment below and update the code to test the property closedCaptionStreams
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishing();
+      //var instance = new Isp.ChannelPublishing();
       //expect(instance).to.be();
     });
 
     it('should have the property featureFlags (base name: "feature_flags")', function() {
       // uncomment below and update the code to test the property featureFlags
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishing();
+      //var instance = new Isp.ChannelPublishing();
       //expect(instance).to.be();
     });
 
     it('should have the property live2vod (base name: "live2vod")', function() {
       // uncomment below and update the code to test the property live2vod
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishing();
+      //var instance = new Isp.ChannelPublishing();
       //expect(instance).to.be();
     });
 
     it('should have the property publications (base name: "publications")', function() {
       // uncomment below and update the code to test the property publications
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishing();
+      //var instance = new Isp.ChannelPublishing();
       //expect(instance).to.be();
     });
 

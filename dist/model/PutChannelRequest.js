@@ -69,6 +69,10 @@ var PutChannelRequest = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new PutChannelRequest();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('created')) {
           obj['created'] = _ApiClient["default"].convertToType(data['created'], 'Date');
         }
@@ -133,10 +137,16 @@ var PutChannelRequest = /*#__PURE__*/function () {
   return PutChannelRequest;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+PutChannelRequest.prototype['$schema'] = undefined;
+/**
  * Date and time the channel was created.
  * @member {Date} created
  */
-
 
 PutChannelRequest.prototype['created'] = undefined;
 /**

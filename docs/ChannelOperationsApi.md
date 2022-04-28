@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelOperationsApi
+# Isp.ChannelOperationsApi
 
 All URIs are relative to *https://api.istreamplanet.com*
 
@@ -30,8 +30,8 @@ Clears the DVR window for the channel by removing all video segments in the mani
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -39,7 +39,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 apiInstance.clearDvrWindow(channelId, (error, data, response) => {
   if (error) {
@@ -82,8 +82,8 @@ Returns the active signals for a channel.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -91,7 +91,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 apiInstance.getSignals(channelId, (error, data, response) => {
   if (error) {
@@ -134,8 +134,8 @@ Inserts the provided UTF-8 text metadata in the output stream embedded in a TXXX
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -143,11 +143,11 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
   'accept': "accept_example", // String | List of accepted Content-Type headers
-  'insertMetadataRequest': new IStreamPlanetChannelsApi.InsertMetadataRequest() // InsertMetadataRequest | 
+  'insertMetadataRequest': new Isp.InsertMetadataRequest() // InsertMetadataRequest | 
 };
 apiInstance.insertId3(channelId, opts, (error, data, response) => {
   if (error) {
@@ -192,8 +192,8 @@ Inserts a SCTE-35 formatted binary payload into the channel.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -201,10 +201,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'scte35': new IStreamPlanetChannelsApi.Scte35() // Scte35 | 
+  'scte35': new Isp.Scte35() // Scte35 | 
 };
 apiInstance.insertScte35(channelId, opts, (error, data, response) => {
   if (error) {
@@ -248,8 +248,8 @@ Get a static image of what your channel is outputting.  Valid Accept headers are
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -257,7 +257,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
   'accept': "accept_example" // String | List of accepted Content-Type headers
@@ -304,8 +304,8 @@ Inserts a &#39;program end&#39; SCTE-35 message into the channel.  This route sh
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -313,10 +313,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'programSignal': new IStreamPlanetChannelsApi.ProgramSignal() // ProgramSignal | 
+  'programSignal': new Isp.ProgramSignal() // ProgramSignal | 
 };
 apiInstance.programEnd(channelId, opts, (error, data, response) => {
   if (error) {
@@ -360,8 +360,8 @@ Inserts a &#39;program start&#39; SCTE-35 message into the channel.  This route 
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -369,10 +369,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'programSignal': new IStreamPlanetChannelsApi.ProgramSignal() // ProgramSignal | 
+  'programSignal': new Isp.ProgramSignal() // ProgramSignal | 
 };
 apiInstance.programStart(channelId, opts, (error, data, response) => {
   if (error) {
@@ -416,8 +416,8 @@ Inserts a SCTE-35 message into the channel.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -425,10 +425,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'genericSignal': [new IStreamPlanetChannelsApi.GenericSignal()] // [GenericSignal] | 
+  'genericSignal': [new Isp.GenericSignal()] // [GenericSignal] | 
 };
 apiInstance.signal(channelId, opts, (error, data, response) => {
   if (error) {
@@ -472,8 +472,8 @@ Replaces the current video source with a slate image or video.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -481,10 +481,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'slate': new IStreamPlanetChannelsApi.Slate() // Slate | 
+  'slate': new Isp.Slate() // Slate | 
 };
 apiInstance.slateIn(channelId, opts, (error, data, response) => {
   if (error) {
@@ -528,8 +528,8 @@ Removes any active slate and show the source video content.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -537,7 +537,7 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 apiInstance.slateOut(channelId, (error, data, response) => {
   if (error) {
@@ -580,8 +580,8 @@ Inserts a &#39;splice insert end&#39; SCTE-35 message into the channel.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -589,10 +589,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'spliceInsertEndSignal': new IStreamPlanetChannelsApi.SpliceInsertEndSignal() // SpliceInsertEndSignal | 
+  'spliceInsertEndSignal': new Isp.SpliceInsertEndSignal() // SpliceInsertEndSignal | 
 };
 apiInstance.spliceEnd(channelId, opts, (error, data, response) => {
   if (error) {
@@ -636,8 +636,8 @@ Inserts a &#39;splice insert start&#39; SCTE-35 message into the channel.
 ### Example
 
 ```javascript
-import IStreamPlanetChannelsApi from 'i_stream_planet_channels_api';
-let defaultClient = IStreamPlanetChannelsApi.ApiClient.instance;
+import Isp from 'isp';
+let defaultClient = Isp.ApiClient.instance;
 // Configure OAuth2 access token for authorization: authcode
 let authcode = defaultClient.authentications['authcode'];
 authcode.accessToken = 'YOUR ACCESS TOKEN';
@@ -645,10 +645,10 @@ authcode.accessToken = 'YOUR ACCESS TOKEN';
 let m2m = defaultClient.authentications['m2m'];
 m2m.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new IStreamPlanetChannelsApi.ChannelOperationsApi();
+let apiInstance = new Isp.ChannelOperationsApi();
 let channelId = "channelId_example"; // String | Unique channel identifier
 let opts = {
-  'spliceInsertStartSignal': new IStreamPlanetChannelsApi.SpliceInsertStartSignal() // SpliceInsertStartSignal | 
+  'spliceInsertStartSignal': new Isp.SpliceInsertStartSignal() // SpliceInsertStartSignal | 
 };
 apiInstance.spliceStart(channelId, opts, (error, data, response) => {
   if (error) {

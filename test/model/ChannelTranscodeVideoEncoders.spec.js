@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+    instance = new Isp.ChannelTranscodeVideoEncoders();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ChannelTranscodeVideoEncoders', function() {
     it('should create an instance of ChannelTranscodeVideoEncoders', function() {
       // uncomment below and update the code to test ChannelTranscodeVideoEncoders
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders);
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
+      //expect(instance).to.be.a(Isp.ChannelTranscodeVideoEncoders);
     });
 
     it('should have the property bitRate (base name: "bit_rate")', function() {
       // uncomment below and update the code to test the property bitRate
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property frameRate (base name: "frame_rate")', function() {
       // uncomment below and update the code to test the property frameRate
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property h264 (base name: "h264")', function() {
       // uncomment below and update the code to test the property h264
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property h265 (base name: "h265")', function() {
       // uncomment below and update the code to test the property h265
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instance = new IStreamPlanetChannelsApi.ChannelTranscodeVideoEncoders();
+      //var instance = new Isp.ChannelTranscodeVideoEncoders();
       //expect(instance).to.be();
     });
 

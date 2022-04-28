@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.Summary
+# Isp.Summary
 
 ## Properties
 

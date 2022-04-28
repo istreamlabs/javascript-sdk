@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ErrorModel();
+    instance = new Isp.ErrorModel();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,49 @@
   describe('ErrorModel', function() {
     it('should create an instance of ErrorModel', function() {
       // uncomment below and update the code to test ErrorModel
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ErrorModel);
+      //var instance = new Isp.ErrorModel();
+      //expect(instance).to.be.a(Isp.ErrorModel);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.ErrorModel();
+      //expect(instance).to.be();
     });
 
     it('should have the property detail (base name: "detail")', function() {
       // uncomment below and update the code to test the property detail
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
+      //var instance = new Isp.ErrorModel();
       //expect(instance).to.be();
     });
 
     it('should have the property errors (base name: "errors")', function() {
       // uncomment below and update the code to test the property errors
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
+      //var instance = new Isp.ErrorModel();
       //expect(instance).to.be();
     });
 
     it('should have the property instance (base name: "instance")', function() {
       // uncomment below and update the code to test the property instance
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
+      //var instance = new Isp.ErrorModel();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
+      //var instance = new Isp.ErrorModel();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
+      //var instance = new Isp.ErrorModel();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new IStreamPlanetChannelsApi.ErrorModel();
+      //var instance = new Isp.ErrorModel();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelSignalingBlackoutSettings
+# Isp.ChannelSignalingBlackoutSettings
 
 ## Properties
 

@@ -1,9 +1,10 @@
-# IStreamPlanetChannelsApi.PutChannelRequest
+# Isp.PutChannelRequest
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**schema** | **String** | An optional URL to a JSON Schema document describing this resource | [optional] 
 **created** | **Date** | Date and time the channel was created. | [optional] [readonly] 
 **id** | **String** | External Channel ID provided at channel creation time | [optional] [readonly] 
 **ingest** | [**PutChannelRequestIngest**](PutChannelRequestIngest.md) |  | 

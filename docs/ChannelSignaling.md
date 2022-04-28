@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelSignaling
+# Isp.ChannelSignaling
 
 ## Properties
 

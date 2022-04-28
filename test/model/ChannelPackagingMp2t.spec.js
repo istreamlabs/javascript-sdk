@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingMp2t();
+    instance = new Isp.ChannelPackagingMp2t();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ChannelPackagingMp2t', function() {
     it('should create an instance of ChannelPackagingMp2t', function() {
       // uncomment below and update the code to test ChannelPackagingMp2t
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingMp2t();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingMp2t);
+      //var instance = new Isp.ChannelPackagingMp2t();
+      //expect(instance).to.be.a(Isp.ChannelPackagingMp2t);
     });
 
     it('should have the property forceUnmuxedAudio (base name: "force_unmuxed_audio")', function() {
       // uncomment below and update the code to test the property forceUnmuxedAudio
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingMp2t();
+      //var instance = new Isp.ChannelPackagingMp2t();
       //expect(instance).to.be();
     });
 
     it('should have the property insertId3UtcTime (base name: "insert_id3_utc_time")', function() {
       // uncomment below and update the code to test the property insertId3UtcTime
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingMp2t();
+      //var instance = new Isp.ChannelPackagingMp2t();
       //expect(instance).to.be();
     });
 

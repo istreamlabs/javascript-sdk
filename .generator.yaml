@@ -1,0 +1,4 @@
+packageName: "@istreamplanet/isp"
+projectName: isp
+allowUnicodeIdentifiers: true
+disallowAdditionalPropertiesIfNotPresent: false

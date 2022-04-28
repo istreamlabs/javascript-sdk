@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
+    instance = new Isp.ChannelPublishingHlsPartialPresentations();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('ChannelPublishingHlsPartialPresentations', function() {
     it('should create an instance of ChannelPublishingHlsPartialPresentations', function() {
       // uncomment below and update the code to test ChannelPublishingHlsPartialPresentations
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations);
+      //var instance = new Isp.ChannelPublishingHlsPartialPresentations();
+      //expect(instance).to.be.a(Isp.ChannelPublishingHlsPartialPresentations);
     });
 
     it('should have the property audioEncoderIds (base name: "audio_encoder_ids")', function() {
       // uncomment below and update the code to test the property audioEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
+      //var instance = new Isp.ChannelPublishingHlsPartialPresentations();
       //expect(instance).to.be();
     });
 
     it('should have the property iframeOnlyEncoderIds (base name: "iframe_only_encoder_ids")', function() {
       // uncomment below and update the code to test the property iframeOnlyEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
+      //var instance = new Isp.ChannelPublishingHlsPartialPresentations();
       //expect(instance).to.be();
     });
 
     it('should have the property playlistPath (base name: "playlist_path")', function() {
       // uncomment below and update the code to test the property playlistPath
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
+      //var instance = new Isp.ChannelPublishingHlsPartialPresentations();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbnailEncoderIds (base name: "thumbnail_encoder_ids")', function() {
       // uncomment below and update the code to test the property thumbnailEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
+      //var instance = new Isp.ChannelPublishingHlsPartialPresentations();
       //expect(instance).to.be();
     });
 
     it('should have the property videoEncoderIds (base name: "video_encoder_ids")', function() {
       // uncomment below and update the code to test the property videoEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingHlsPartialPresentations();
+      //var instance = new Isp.ChannelPublishingHlsPartialPresentations();
       //expect(instance).to.be();
     });
 

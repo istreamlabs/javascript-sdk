@@ -55,6 +55,10 @@ var ChannelTranscodeH265 = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ChannelTranscodeH265();
 
+        if (data.hasOwnProperty('hdr')) {
+          obj['hdr'] = _ApiClient["default"].convertToType(data['hdr'], Object);
+        }
+
         if (data.hasOwnProperty('profile')) {
           obj['profile'] = _ApiClient["default"].convertToType(data['profile'], 'String');
         }
@@ -67,10 +71,16 @@ var ChannelTranscodeH265 = /*#__PURE__*/function () {
   return ChannelTranscodeH265;
 }();
 /**
+ * Configure the HDR settings.
+ * @member {Object} hdr
+ */
+
+
+ChannelTranscodeH265.prototype['hdr'] = undefined;
+/**
  * H.265 video profile, which defines various encoder features and settings. See https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding#Profiles for details.
  * @member {module:model/ChannelTranscodeH265.ProfileEnum} profile
  */
-
 
 ChannelTranscodeH265.prototype['profile'] = undefined;
 /**

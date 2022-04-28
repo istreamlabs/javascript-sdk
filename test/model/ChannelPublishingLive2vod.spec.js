@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingLive2vod();
+    instance = new Isp.ChannelPublishingLive2vod();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ChannelPublishingLive2vod', function() {
     it('should create an instance of ChannelPublishingLive2vod', function() {
       // uncomment below and update the code to test ChannelPublishingLive2vod
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingLive2vod();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingLive2vod);
+      //var instance = new Isp.ChannelPublishingLive2vod();
+      //expect(instance).to.be.a(Isp.ChannelPublishingLive2vod);
     });
 
     it('should have the property productId (base name: "product_id")', function() {
       // uncomment below and update the code to test the property productId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingLive2vod();
+      //var instance = new Isp.ChannelPublishingLive2vod();
       //expect(instance).to.be();
     });
 
     it('should have the property retentionDays (base name: "retention_days")', function() {
       // uncomment below and update the code to test the property retentionDays
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingLive2vod();
+      //var instance = new Isp.ChannelPublishingLive2vod();
       //expect(instance).to.be();
     });
 

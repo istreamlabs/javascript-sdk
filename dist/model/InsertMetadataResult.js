@@ -57,6 +57,10 @@ var InsertMetadataResult = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new InsertMetadataResult();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('presentation_time')) {
           obj['presentation_time'] = _ApiClient["default"].convertToType(data['presentation_time'], 'Date');
         }
@@ -69,10 +73,16 @@ var InsertMetadataResult = /*#__PURE__*/function () {
   return InsertMetadataResult;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+InsertMetadataResult.prototype['$schema'] = undefined;
+/**
  * The media stream timestamp for where the transcoder inserted the metadata
  * @member {Date} presentation_time
  */
-
 
 InsertMetadataResult.prototype['presentation_time'] = undefined;
 var _default = InsertMetadataResult;

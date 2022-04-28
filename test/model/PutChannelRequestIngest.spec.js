@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.PutChannelRequestIngest();
+    instance = new Isp.PutChannelRequestIngest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('PutChannelRequestIngest', function() {
     it('should create an instance of PutChannelRequestIngest', function() {
       // uncomment below and update the code to test PutChannelRequestIngest
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngest();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.PutChannelRequestIngest);
+      //var instance = new Isp.PutChannelRequestIngest();
+      //expect(instance).to.be.a(Isp.PutChannelRequestIngest);
     });
 
     it('should have the property slate (base name: "slate")', function() {
       // uncomment below and update the code to test the property slate
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngest();
+      //var instance = new Isp.PutChannelRequestIngest();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instance = new IStreamPlanetChannelsApi.PutChannelRequestIngest();
+      //var instance = new Isp.PutChannelRequestIngest();
       //expect(instance).to.be();
     });
 

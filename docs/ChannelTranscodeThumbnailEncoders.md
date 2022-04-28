@@ -1,4 +1,4 @@
-# IStreamPlanetChannelsApi.ChannelTranscodeThumbnailEncoders
+# Isp.ChannelTranscodeThumbnailEncoders
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+    instance = new Isp.ChannelPublishingPublications();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,91 +50,91 @@
   describe('ChannelPublishingPublications', function() {
     it('should create an instance of ChannelPublishingPublications', function() {
       // uncomment below and update the code to test ChannelPublishingPublications
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingPublications);
+      //var instance = new Isp.ChannelPublishingPublications();
+      //expect(instance).to.be.a(Isp.ChannelPublishingPublications);
     });
 
     it('should have the property audioEncoderIds (base name: "audio_encoder_ids")', function() {
       // uncomment below and update the code to test the property audioEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property createVods (base name: "create_vods")', function() {
       // uncomment below and update the code to test the property createVods
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property dash (base name: "dash")', function() {
       // uncomment below and update the code to test the property dash
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property drms (base name: "drms")', function() {
       // uncomment below and update the code to test the property drms
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property dvrWindowSecs (base name: "dvr_window_secs")', function() {
       // uncomment below and update the code to test the property dvrWindowSecs
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property hls (base name: "hls")', function() {
       // uncomment below and update the code to test the property hls
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property iframeOnlyEncoderIds (base name: "iframe_only_encoder_ids")', function() {
       // uncomment below and update the code to test the property iframeOnlyEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property masterPlaylistName (base name: "master_playlist_name")', function() {
       // uncomment below and update the code to test the property masterPlaylistName
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property packagerId (base name: "packager_id")', function() {
       // uncomment below and update the code to test the property packagerId
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property publishPoints (base name: "publish_points")', function() {
       // uncomment below and update the code to test the property publishPoints
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property redundantPublishing (base name: "redundant_publishing")', function() {
       // uncomment below and update the code to test the property redundantPublishing
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property thumbnailEncoderIds (base name: "thumbnail_encoder_ids")', function() {
       // uncomment below and update the code to test the property thumbnailEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property useStrictBitrate (base name: "use_strict_bitrate")', function() {
       // uncomment below and update the code to test the property useStrictBitrate
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 
     it('should have the property videoEncoderIds (base name: "video_encoder_ids")', function() {
       // uncomment below and update the code to test the property videoEncoderIds
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingPublications();
+      //var instance = new Isp.ChannelPublishingPublications();
       //expect(instance).to.be();
     });
 

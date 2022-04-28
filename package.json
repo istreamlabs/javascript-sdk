@@ -1,22 +1,25 @@
 {
-  "name": "i_stream_planet_channels_api",
-  "version": "0.0.0",
-  "description": "This_API_provides_a_way_to_list_create_and_run_channels_Channels_consist_of_inputs__ingest_transcoding_settings_like_codecs_and_bitrates_and_outputs__publishing_List_calls_use_cursor_based_pagination_with__RFC_5988_https__tools_ietf_org_html_rfc5988_Link_headers__Clients_should_read_this_header_and_follow_the_next_link_to_read_all_pages_of_results_",
-  "license": "Unlicense",
+  "name": "@istreamplanet/isp",
+  "private": true,
+  "version": "0.0.1",
+  "description": "iStreamPlanet Javascript SDK",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "scripts": {
+    "download": "curl https://api.istreamplanet.com/openapi.json -o openapi.json",
+    "generate": "openapi-generator-cli generate -c .generator.yaml -i ./openapi.json -g javascript --skip-validate-spec -o .",
     "build": "babel src -d dist",
-    "prepare": "npm run build",
+    "update": "npm run download && npm run generate && npm run build",
     "test": "mocha --require @babel/register --recursive"
   },
   "browser": {
     "fs": false
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0",
     "superagent": "^5.3.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-decorators": "^7.0.0",
@@ -36,6 +39,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@openapitools/openapi-generator-cli": "^2.4.26",
     "expect.js": "^0.3.1",
     "mocha": "^8.0.1",
     "sinon": "^7.2.0"

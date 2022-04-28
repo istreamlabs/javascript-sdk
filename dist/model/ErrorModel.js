@@ -56,6 +56,10 @@ var ErrorModel = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ErrorModel();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('detail')) {
           obj['detail'] = _ApiClient["default"].convertToType(data['detail'], 'String');
         }
@@ -88,10 +92,16 @@ var ErrorModel = /*#__PURE__*/function () {
   return ErrorModel;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+ErrorModel.prototype['$schema'] = undefined;
+/**
  * A human-readable explanation specific to this occurrence of the problem.
  * @member {String} detail
  */
-
 
 ErrorModel.prototype['detail'] = undefined;
 /**

@@ -59,6 +59,10 @@ var Source = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new Source();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('id')) {
           obj['id'] = _ApiClient["default"].convertToType(data['id'], 'String');
         }
@@ -79,10 +83,16 @@ var Source = /*#__PURE__*/function () {
   return Source;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+Source.prototype['$schema'] = undefined;
+/**
  * Unique source ID
  * @member {String} id
  */
-
 
 Source.prototype['id'] = undefined;
 /**

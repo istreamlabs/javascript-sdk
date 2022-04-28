@@ -56,6 +56,10 @@ var ChannelPlayback = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ChannelPlayback();
 
+        if (data.hasOwnProperty('$schema')) {
+          obj['$schema'] = _ApiClient["default"].convertToType(data['$schema'], 'String');
+        }
+
         if (data.hasOwnProperty('cmaf')) {
           obj['cmaf'] = _ApiClient["default"].convertToType(data['cmaf'], [_ChannelPlaybackCmaf["default"]]);
         }
@@ -76,10 +80,16 @@ var ChannelPlayback = /*#__PURE__*/function () {
   return ChannelPlayback;
 }();
 /**
+ * An optional URL to a JSON Schema document describing this resource
+ * @member {String} $schema
+ */
+
+
+ChannelPlayback.prototype['$schema'] = undefined;
+/**
  * CMAF playback configurations
  * @member {Array.<module:model/ChannelPlaybackCmaf>} cmaf
  */
-
 
 ChannelPlayback.prototype['cmaf'] = undefined;
 /**

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPackagingMp4();
+    instance = new Isp.ChannelPackagingMp4();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ChannelPackagingMp4', function() {
     it('should create an instance of ChannelPackagingMp4', function() {
       // uncomment below and update the code to test ChannelPackagingMp4
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingMp4();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPackagingMp4);
+      //var instance = new Isp.ChannelPackagingMp4();
+      //expect(instance).to.be.a(Isp.ChannelPackagingMp4);
     });
 
     it('should have the property captionPlacement (base name: "caption_placement")', function() {
       // uncomment below and update the code to test the property captionPlacement
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingMp4();
+      //var instance = new Isp.ChannelPackagingMp4();
       //expect(instance).to.be();
     });
 
     it('should have the property insertPsshBox (base name: "insert_pssh_box")', function() {
       // uncomment below and update the code to test the property insertPsshBox
-      //var instance = new IStreamPlanetChannelsApi.ChannelPackagingMp4();
+      //var instance = new Isp.ChannelPackagingMp4();
       //expect(instance).to.be();
     });
 

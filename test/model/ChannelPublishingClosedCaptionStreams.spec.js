@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams();
+    instance = new Isp.ChannelPublishingClosedCaptionStreams();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ChannelPublishingClosedCaptionStreams', function() {
     it('should create an instance of ChannelPublishingClosedCaptionStreams', function() {
       // uncomment below and update the code to test ChannelPublishingClosedCaptionStreams
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams);
+      //var instance = new Isp.ChannelPublishingClosedCaptionStreams();
+      //expect(instance).to.be.a(Isp.ChannelPublishingClosedCaptionStreams);
     });
 
     it('should have the property autoSelect (base name: "auto_select")', function() {
       // uncomment below and update the code to test the property autoSelect
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams();
+      //var instance = new Isp.ChannelPublishingClosedCaptionStreams();
       //expect(instance).to.be();
     });
 
     it('should have the property _default (base name: "default")', function() {
       // uncomment below and update the code to test the property _default
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams();
+      //var instance = new Isp.ChannelPublishingClosedCaptionStreams();
       //expect(instance).to.be();
     });
 
     it('should have the property language (base name: "language")', function() {
       // uncomment below and update the code to test the property language
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams();
+      //var instance = new Isp.ChannelPublishingClosedCaptionStreams();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new IStreamPlanetChannelsApi.ChannelPublishingClosedCaptionStreams();
+      //var instance = new Isp.ChannelPublishingClosedCaptionStreams();
       //expect(instance).to.be();
     });
 

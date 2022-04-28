@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.IStreamPlanetChannelsApi);
+    factory(root.expect, root.Isp);
   }
-}(this, function(expect, IStreamPlanetChannelsApi) {
+}(this, function(expect, Isp) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new IStreamPlanetChannelsApi.Scte35();
+    instance = new Isp.Scte35();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,19 @@
   describe('Scte35', function() {
     it('should create an instance of Scte35', function() {
       // uncomment below and update the code to test Scte35
-      //var instance = new IStreamPlanetChannelsApi.Scte35();
-      //expect(instance).to.be.a(IStreamPlanetChannelsApi.Scte35);
+      //var instance = new Isp.Scte35();
+      //expect(instance).to.be.a(Isp.Scte35);
+    });
+
+    it('should have the property schema (base name: "$schema")', function() {
+      // uncomment below and update the code to test the property schema
+      //var instance = new Isp.Scte35();
+      //expect(instance).to.be();
     });
 
     it('should have the property payload (base name: "payload")', function() {
       // uncomment below and update the code to test the property payload
-      //var instance = new IStreamPlanetChannelsApi.Scte35();
+      //var instance = new Isp.Scte35();
       //expect(instance).to.be();
     });
 
